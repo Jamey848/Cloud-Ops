@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ar22rjHavUg=",
+  "dgSpecHash": "72YeZ7deaGE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Cloud & Ops Github\\Cloud-Ops-project\\blazor_API\\Recommendation_engine.csproj",
+  "projectFilePath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\blazor_API\\Recommendation_engine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jamey\\.nuget\\packages\\dapper\\2.1.89\\dapper.2.1.89.nupkg.sha512",
     "C:\\Users\\jamey\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
