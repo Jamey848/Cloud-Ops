@@ -1,0 +1,32 @@
+﻿
+.game-details-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.game-details-window {
+    position: relative;
+    width: 80%;
+    max-width: 850px;
+    min-height: 450px;
+    background: #151827;
+    border: 1px solid #49316e;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}

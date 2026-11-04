@@ -1,0 +1,124 @@
+﻿@page "/"
+@using Recommendations_engine
+@using System.Net.Http.Json
+@inject HttpClient Http
+@using CloudOpsBlazor.Components.Pages.Shared
+@rendermode InteractiveServer
+
+<PageTitle>Home</PageTitle>
+
+
+<div class="home-page">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        @if (games != null && games.Count > 0)
+        {
+            <div class="hero-content">
+                <h1>
+                    @games[0].Name
+                </h1>
+
+                <p>
+                    Start your gaming exploration journey today with some of the highest rated games on Steam.
+                    <br />
+                    <br />
+                    Or if you have a bit more of an 'aquired taste': check out the discover page with over <span>40.000</span> games waiting for you.
+                </p>
+
+                <NavLink href="/discover" class="gaming-button">
+                    Explore new games!
+                </NavLink>
+            </div>
+
+        
+            <div class="hero-image">
+                <img src="@games[0].Header_image"
+                     alt="@games[0].Name" />
+            </div>
+        }
+
+    </section>
+
+    <!-- TOP 100 SECTION -->
+    <section class="top-games-section">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">THE COMMUNITY'S FAVOURITES</span>
+                <h2>Top 20 Rated Games</h2>
+            </div>
+
+            <NavLink href="/top-100" class="view-all">
+                View All →
+            </NavLink>
+        </div>
+
+        @if (games == null)
+        {
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <p>@errorMessage</p>
+            }
+            else
+            {
+                <p>Loading games...</p>
+            }
+        }
+        else if (games.Count == 0)
+        {
+            <p>No games found.</p>
+        }
+        else
+        {
+            <div class="games-grid">
+
+                @for (int i = 0; i < Math.Min(games.Count, 20); i++)
+                {
+                    <GameCard Game="games[i]"
+                              Rank="@(i + 1)"
+                              OnGameSelected="OpenGameDetails" />
+                }
+
+            </div>
+        }
+
+    </section>
+
+    <GameDetails IsVisible="@isGameDetailsOpen"
+                 OnClose="CloseGameDetails" />
+
+</div>
+
+@code {
+    private List<game_card>? games;
+    private string? errorMessage;
+    public bool isGameDetailsOpen = false;
+    private game_card? selectedGame;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            games = await Http.GetFromJsonAsync<List<game_card>>("api/Games")
+                     ?? new List<game_card>();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+            games = new List<game_card>();
+        }
+    }
+
+    private void OpenGameDetails(game_card game)
+    {
+        selectedGame = game;
+        isGameDetailsOpen = true;
+    }
+
+    private void CloseGameDetails()
+    {
+        isGameDetailsOpen = false;
+        selectedGame = null;
+    }
+}

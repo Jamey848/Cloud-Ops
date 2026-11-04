@@ -1,0 +1,24 @@
+﻿@if (IsVisible)
+{
+    <div class="game-details-overlay">
+        <div class="game-details-window">
+
+            <button class="close-button"
+                    @onclick="OnClose">
+                &times;
+            </button>
+
+            <h2>Game Details</h2>
+
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public bool IsVisible { get; set; }
+
+    [Parameter]
+    public EventCallback OnClose { get; set; }
+}
+

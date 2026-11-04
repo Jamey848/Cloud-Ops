@@ -1,0 +1,244 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\pages\\shared\\gamedetails.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\shared\\gamedetails.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\pages\\shared\\gamedetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\shared\\gamedetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\pages\\shared\\gamecard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\shared\\gamecard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\game_obj\\game_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:game_obj\\game_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\pages\\shared\\gamecard.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\shared\\gamecard.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\cloudopsblazor\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameDetails.razor.css",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameDetails.razor.css",
+              "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameDetails.razor.css",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameDetails.razor.css",
+              "RelativeToolTip": "Components\\Pages\\Shared\\GameDetails.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-02T18:10:45.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameDetails.razor",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameDetails.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameDetails.razor",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameDetails.razor",
+              "RelativeToolTip": "Components\\Pages\\Shared\\GameDetails.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-02T18:10:24.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameCard.razor.css",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameCard.razor.css",
+              "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameCard.razor.css",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameCard.razor.css",
+              "RelativeToolTip": "Components\\Pages\\Shared\\GameCard.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-02T17:17:36.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameCard.razor",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameCard.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameCard.razor",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameCard.razor",
+              "RelativeToolTip": "Components\\Pages\\Shared\\GameCard.razor",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-02T17:16:42.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T17:12:44.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "game_card.cs",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Game_obj\\game_card.cs",
+              "RelativeDocumentMoniker": "Game_obj\\game_card.cs",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Game_obj\\game_card.cs",
+              "RelativeToolTip": "Game_obj\\game_card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T17:09:04.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-31T12:35:00.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-31T12:27:02.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor.css",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-31T12:26:38.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-31T12:26:10.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-31T12:20:58.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor.css",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Home.razor.css",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor.css",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\Components\\Pages\\Home.razor.css",
+              "RelativeToolTip": "Components\\Pages\\Home.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-31T12:20:27.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\wwwroot\\app.css",
+              "RelativeToolTip": "wwwroot\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-31T12:18:37.996Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
