@@ -14,7 +14,9 @@ namespace CloudOpsBlazor
 
             builder.Services.AddScoped(sp => new HttpClient
             {
-                BaseAddress = new Uri("https://localhost:7030/")
+                BaseAddress = new Uri(
+                builder.Configuration["ApiBaseUrl"]
+                ?? "https://localhost:7030/")
             });
 
             builder.Services.AddHttpClient();
