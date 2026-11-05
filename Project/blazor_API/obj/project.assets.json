@@ -2593,11 +2593,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Cloud & Ops Github\\Cloud-Ops-project\\blazor_API\\Recommendation_engine.csproj",
+      "projectUniqueName": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\blazor_API\\Recommendation_engine.csproj",
       "projectName": "Recommendation_engine",
-      "projectPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Cloud & Ops Github\\Cloud-Ops-project\\blazor_API\\Recommendation_engine.csproj",
+      "projectPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\blazor_API\\Recommendation_engine.csproj",
       "packagesPath": "C:\\Users\\jamey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Cloud & Ops Github\\Cloud-Ops-project\\blazor_API\\obj\\",
+      "outputPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\blazor_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

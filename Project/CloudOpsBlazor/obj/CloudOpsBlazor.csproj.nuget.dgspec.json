@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\CloudOpsBlazor.csproj": {}
+    "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\CloudOpsBlazor\\CloudOpsBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\CloudOpsBlazor.csproj": {
+    "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\CloudOpsBlazor\\CloudOpsBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\CloudOpsBlazor.csproj",
+        "projectUniqueName": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\CloudOpsBlazor\\CloudOpsBlazor.csproj",
         "projectName": "CloudOpsBlazor",
-        "projectPath": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\CloudOpsBlazor.csproj",
+        "projectPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\CloudOpsBlazor\\CloudOpsBlazor.csproj",
         "packagesPath": "C:\\Users\\jamey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jamey\\Vakken jaar 3\\CloudOpsBlazor\\obj\\",
+        "outputPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud & Ops\\Fixed Cloud & Ops Github\\Project\\CloudOpsBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

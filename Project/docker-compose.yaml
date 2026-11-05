@@ -1,0 +1,25 @@
+
+services:
+  api:
+    build:
+      context: ./blazor_API
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_HTTP_PORTS: 8080
+      ConnectionStrings__DefaultConnection: "${SUPABASE_CONNECTION_STRING:?Missing connection string in .env}"
+    restart: unless-stopped
+
+  blazor:
+    build:
+      context: ./CloudOpsBlazor
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
+    environment:
+      ASPNETCORE_HTTP_PORTS: 8080
+      ApiBaseUrl: "http://api:8080/"
+    depends_on:
+      - api
+    restart: unless-stopped

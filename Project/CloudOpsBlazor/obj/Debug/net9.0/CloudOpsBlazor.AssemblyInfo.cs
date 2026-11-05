@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudOpsBlazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32895921a36eecc2fa40e461b4d4166d481d2bb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudOpsBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudOpsBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
