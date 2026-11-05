@@ -1,0 +1,48 @@
+
+name: CI - ASP.NET Core & Blazor
+
+on:
+  push:
+    branches: [main, docker-integration]
+  pull_request:
+    branches: [main, docker-integration]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      # Backend
+      - name: Restore Backend
+        run: dotnet restore Project/blazor_API/Recommendation_engine.sln
+
+      - name: Build Backend
+        run: dotnet build Project/blazor_API/Recommendation_engine.sln --no-restore -c Release
+
+      - name: Test Backend
+        run: dotnet test Project/blazor_API/Recommendation_engine.sln --no-build -c Release
+
+      # Blazor
+      - name: Restore Blazor
+        run: dotnet restore Project/CloudOpsBlazor/CloudOpsBlazor.sln
+
+      - name: Build Blazor
+        run: dotnet build Project/CloudOpsBlazor/CloudOpsBlazor.sln --no-restore -c Release
+
+      - name: Test Blazor
+        run: dotnet test Project/CloudOpsBlazor/CloudOpsBlazor.sln --no-build -c Release
+
+      # Docker
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker containers
+        run: docker compose -f Project/docker-compose.yaml build
