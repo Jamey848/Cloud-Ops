@@ -3,9 +3,9 @@ name: CI - ASP.NET Core & Blazor
 
 on:
   push:
-    branches: [main, docker-integration]
+    branches: [master, docker-integration]
   pull_request:
-    branches: [main, docker-integration]
+    branches: [master, docker-integration]
 
 jobs:
   build:
