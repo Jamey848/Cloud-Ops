@@ -45,4 +45,6 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker containers
+        env:
+          SUPABASE_CONNECTION_STRING: ${SUPABASE_CONNECTION_STRING:-}
         run: docker compose -f Project/docker-compose.yaml build
