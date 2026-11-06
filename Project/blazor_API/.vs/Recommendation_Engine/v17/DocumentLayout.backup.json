@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\recommendation_engine.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -28,10 +32,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5241E782-B2C7-5FA3-3AA3-7F14F28C8B3E}|Recommendation_engine.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\blazor_api\\controllers\\gamescontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -56,7 +56,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -64,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -77,20 +77,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Recommendation_engine",
+              "DocumentIndex": 4,
+              "Title": "Recommendation_engine.csproj",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\Recommendation_engine.csproj",
               "RelativeDocumentMoniker": "Recommendation_engine.csproj",
               "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\Recommendation_engine.csproj",
               "RelativeToolTip": "Recommendation_engine.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-04T17:28:49.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-04T17:28:49.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Recommendation_engine.http",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\Recommendation_engine.http",
               "RelativeDocumentMoniker": "Recommendation_engine.http",
@@ -98,25 +97,24 @@
               "RelativeToolTip": "Recommendation_engine.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-11-04T17:23:11.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-04T17:23:11.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-11-04T17:22:48.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Cloud \u0026 Ops Github\\Cloud-Ops-project\\cloudops_blazor_project\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "..\\..\\..\\Cloud \u0026 Ops Github\\Cloud-Ops-project\\cloudops_blazor_project\\Components\\Layout\\MainLayout.razor.css",
@@ -124,8 +122,7 @@
               "RelativeToolTip": "..\\..\\..\\Cloud \u0026 Ops Github\\Cloud-Ops-project\\cloudops_blazor_project\\Components\\Layout\\MainLayout.razor.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-10-31T12:05:21.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T12:05:21.214Z"
             },
             {
               "$type": "Document",
@@ -165,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\AppDBContext.cs",
               "RelativeDocumentMoniker": "AppDBContext.cs",
@@ -190,20 +187,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCIAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-31T09:37:56.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\blazor_API\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WeatherForecast.cs",
@@ -211,8 +208,7 @@
               "RelativeToolTip": "WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T09:37:55.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T09:37:55.77Z"
             }
           ]
         }
