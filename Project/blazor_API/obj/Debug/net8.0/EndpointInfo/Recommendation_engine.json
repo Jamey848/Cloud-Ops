@@ -106,6 +106,46 @@
         }
       }
     },
+    "/api/Games/details/{appId}": {
+      "get": {
+        "tags": [
+          "Games"
+        ],
+        "parameters": [
+          {
+            "name": "appId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DetailedGameDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DetailedGameDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DetailedGameDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -148,6 +188,348 @@
   },
   "components": {
     "schemas": {
+      "Category": {
+        "type": "object",
+        "properties": {
+          "categorieId": {
+            "type": "string",
+            "nullable": true
+          },
+          "categorieName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetailedGameDto": {
+        "type": "object",
+        "properties": {
+          "appId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "releaseDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "requiredAge": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "dlcCount": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "shortDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "headerImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "windows": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "mac": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "linux": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "achievements": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "recommendations": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "developers": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishers": {
+            "type": "string",
+            "nullable": true
+          },
+          "compositeScore": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "genres": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "screenshots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GameCategory": {
+        "type": "object",
+        "properties": {
+          "gcId": {
+            "type": "string",
+            "nullable": true
+          },
+          "appId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "categorieId": {
+            "type": "string",
+            "nullable": true
+          },
+          "linked_category": {
+            "$ref": "#/components/schemas/Category"
+          },
+          "game": {
+            "$ref": "#/components/schemas/game"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GameGenre": {
+        "type": "object",
+        "properties": {
+          "ggId": {
+            "type": "string",
+            "nullable": true
+          },
+          "appId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "genreId": {
+            "type": "string",
+            "nullable": true
+          },
+          "linked_genre": {
+            "$ref": "#/components/schemas/Genre"
+          },
+          "game": {
+            "$ref": "#/components/schemas/game"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GameTag": {
+        "type": "object",
+        "properties": {
+          "gtId": {
+            "type": "string",
+            "nullable": true
+          },
+          "appId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "tagId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "score": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "linked_tag": {
+            "$ref": "#/components/schemas/Tag"
+          },
+          "game": {
+            "$ref": "#/components/schemas/game"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Genre": {
+        "type": "object",
+        "properties": {
+          "genreId": {
+            "type": "string",
+            "nullable": true
+          },
+          "genreName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Popularity": {
+        "type": "object",
+        "properties": {
+          "popId": {
+            "type": "string",
+            "nullable": true
+          },
+          "appId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "playersCurrent": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "playersUpdatedAt": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "playersAllTimePeak": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "playersAllTimePeakAt": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "reviewsTotal": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "reviewsPositivePercent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "reviewsSummary": {
+            "type": "string",
+            "nullable": true
+          },
+          "game": {
+            "$ref": "#/components/schemas/game"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Price": {
+        "type": "object",
+        "properties": {
+          "priceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "appId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "initialPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "finalPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "discount": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "game": {
+            "$ref": "#/components/schemas/game"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Screenshot": {
+        "type": "object",
+        "properties": {
+          "screenId": {
+            "type": "string",
+            "nullable": true
+          },
+          "appId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "screenshotUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "game": {
+            "$ref": "#/components/schemas/game"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tag": {
+        "type": "object",
+        "properties": {
+          "tagId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "tagName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "WeatherForecast": {
         "type": "object",
         "properties": {
@@ -241,6 +623,40 @@
           },
           "header_image": {
             "type": "string",
+            "nullable": true
+          },
+          "popularity": {
+            "$ref": "#/components/schemas/Popularity"
+          },
+          "price": {
+            "$ref": "#/components/schemas/Price"
+          },
+          "screenshots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Screenshot"
+            },
+            "nullable": true
+          },
+          "gameGenres": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GameGenre"
+            },
+            "nullable": true
+          },
+          "gameTags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GameTag"
+            },
+            "nullable": true
+          },
+          "gameCategories": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GameCategory"
+            },
             "nullable": true
           }
         },

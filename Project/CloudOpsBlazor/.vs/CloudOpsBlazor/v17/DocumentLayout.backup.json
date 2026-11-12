@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,6 +17,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\components\\pages\\shared\\gamecard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\shared\\gamecard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\game_obj\\game_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +86,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-11-11T13:30:22.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Routes.razor",
+              "RelativeToolTip": "Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-11T13:30:03.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Components\\App.razor",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\App.razor",
+              "RelativeToolTip": "Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-11T13:29:50.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-11T13:29:44.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GameDetails.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameDetails.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameDetails.razor.css",
@@ -78,23 +146,25 @@
               "RelativeToolTip": "Components\\Pages\\Shared\\GameDetails.razor.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-02T18:10:45.229Z"
+              "WhenOpened": "2026-11-02T18:10:45.229Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "GameDetails.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameDetails.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameDetails.razor",
               "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameDetails.razor",
               "RelativeToolTip": "Components\\Pages\\Shared\\GameDetails.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-02T18:10:24.558Z"
+              "WhenOpened": "2026-11-02T18:10:24.558Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "GameCard.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameCard.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameCard.razor.css",
@@ -106,32 +176,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "GameCard.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameCard.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameCard.razor",
               "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameCard.razor",
               "RelativeToolTip": "Components\\Pages\\Shared\\GameCard.razor",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-02T17:16:42.855Z"
+              "WhenOpened": "2026-11-02T17:16:42.855Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwCgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-02T17:12:44.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "game_card.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Game_obj\\game_card.cs",
               "RelativeDocumentMoniker": "Game_obj\\game_card.cs",
@@ -143,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
@@ -155,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor.css",
@@ -167,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "NavMenu.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Layout\\NavMenu.razor.css",
               "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor.css",
@@ -179,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
@@ -191,20 +262,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "Components\\Pages\\Home.razor",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAE4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-10-31T12:20:58.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Home.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Home.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor.css",
@@ -216,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "wwwroot\\app.css",

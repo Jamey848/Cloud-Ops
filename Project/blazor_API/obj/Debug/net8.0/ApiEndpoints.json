@@ -62,6 +62,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Recommendations_engine.GamesController",
+    "Method": "GetGame",
+    "RelativePath": "api/Games/details/{appId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Recommendation_engine.DetailedGameDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Recommendations_engine.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
