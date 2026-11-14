@@ -2,7 +2,8 @@
 # ==========================================
 # BUILD STAGE
 # ==========================================
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build # Fetch offical sdk image. Basically the engine to:
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build 
+# Fetch offical sdk image. Basically the engine to:
 # build the application,
 # fetch nuget dependancies
 # compile c# code
@@ -10,18 +11,21 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build # Fetch offical sdk image. Basica
 
 WORKDIR /src # Define working directory in the build container.
 
-COPY Recommendation_engine.csproj ./ # Fetch the csproj file. Basically the DNA of your project:
+COPY Recommendation_engine.csproj ./ 
+# Fetch the csproj file. Basically the DNA of your project:
 # Target .NET framework, NuGet packages, project configurations.
 
-RUN dotnet restore "Recommendation_engine.csproj" # Download all dependancies & NuGet packages. Makes it available for build.
+RUN dotnet restore "Recommendation_engine.csproj" 
+# Download all dependancies & NuGet packages. Makes it available for build.
 
-COPY . . # Copies all the application files from the host machine into the src working dir.
+COPY . . 
+# Copies all the application files from the host machine into the src working dir.
 # Hopefully dockerignore now filters out unecessary files like bin, git, etc.
 
-RUN dotnet publish "Recommendation_engine.csproj" \ # Build the application from specified project folder.
-    -c Release \ # Release configuration instead of debug. Tends to have better performance for production.
-    -o /app/publish \ # All project files will be placed in the app/publish file of the final container.
-    --no-restore # Skip depedanncy restoration
+RUN dotnet publish "Recommendation_engine.csproj" \     
+	-c Release \ 
+        -o /app/publish \ 
+        --no-restore # Skip depedanncy restoration
 
 
 # ==========================================
@@ -31,10 +35,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 
 WORKDIR /app
 
-ENV ASPNETCORE_HTTP_PORTS=8080 # Application listens to requests on this port.
+ENV ASPNETCORE_HTTP_PORTS=8080
 
-COPY --from=build /app/publish . # All the files and configuration of the build step: all of that is now
-# published into the working directory of the final container.
+COPY --from=build /app/publish .
 
 EXPOSE 8080
 

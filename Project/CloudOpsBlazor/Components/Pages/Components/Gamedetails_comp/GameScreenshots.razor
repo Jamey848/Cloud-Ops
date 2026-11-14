@@ -1,0 +1,24 @@
+﻿@namespace CloudOpsBlazor.Components.Game_details
+@using Recommendations_engine
+
+@if (GameDTO?.Screenshots?.Count > 0)
+{
+    <div class="game-screenshots">
+        <h3>Screenshots</h3>
+
+        <div class="screenshot-grid">
+            @foreach (var screenshot in GameDTO.Screenshots.Take(6))
+            {
+                <img src="@screenshot"
+                     alt="Game screenshot"
+                     loading="lazy" />
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public DetailedGameDto? GameDTO { get; set; }
+}
+

@@ -301,6 +301,12 @@
               "type": "string"
             },
             "nullable": true
+          },
+          "popDTO": {
+            "$ref": "#/components/schemas/Game_popularity"
+          },
+          "priceDTO": {
+            "$ref": "#/components/schemas/Game_price"
           }
         },
         "additionalProperties": false
@@ -382,6 +388,61 @@
           },
           "game": {
             "$ref": "#/components/schemas/game"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Game_popularity": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "playerPeak": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "reviews": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "pos_percent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Game_price": {
+        "type": "object",
+        "properties": {
+          "initialPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "finalPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "discount": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false

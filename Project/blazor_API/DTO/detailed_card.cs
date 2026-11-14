@@ -29,6 +29,8 @@
         public List<string> Tags { get; set; } = [];
         public List<string> Categories { get; set; } = [];
         public List<string> Screenshots { get; set; } = [];
+        public Game_popularity PopDTO { get; set; }
+        public Game_price PriceDTO { get; set; }
         /*public Popularity Popularity { get; set; }
         public Price Prices { get; set; }*/ // Let this be known as a 'BFM', or in other words: 'A BIG FREAKING MISTAKE'
     }

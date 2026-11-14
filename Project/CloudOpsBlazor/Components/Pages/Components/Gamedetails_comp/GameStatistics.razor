@@ -1,0 +1,34 @@
+﻿@namespace CloudOpsBlazor.Components.Game_details
+@using Recommendations_engine
+
+@if (GameDTO != null)
+{
+    <div class="game-statistics">
+
+        <div class="stat-card">
+            <span>Achievements</span>
+            <strong>@(GameDTO.Achievements?.ToString() ?? "N/A")</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Recommendations</span>
+            <strong>@(GameDTO.Recommendations?.ToString("N0") ?? "N/A")</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DLCs</span>
+            <strong>@(GameDTO.DlcCount?.ToString() ?? "N/A")</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>CompositeScore</span>
+            <strong>@(GameDTO.CompositeScore?.ToString("0.0") ?? "N/A")</strong>
+        </div>
+
+    </div>
+}
+
+@code {
+    [Parameter]
+    public DetailedGameDto? GameDTO { get; set; }
+}

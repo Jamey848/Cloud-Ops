@@ -1,0 +1,28 @@
+﻿/* ==========================================
+   METADATA
+========================================== */
+
+h3 {
+    color: white;
+    margin-top: 20px;
+}
+
+.game-metadata {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #303943;
+}
+
+.metadata-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.metadata-tags span {
+    background: #243b4d;
+    color: #66c0f4;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+}

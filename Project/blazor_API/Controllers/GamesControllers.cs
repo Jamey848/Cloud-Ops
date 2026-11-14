@@ -142,6 +142,23 @@ namespace Recommendations_engine
                 .Select(x => x.ScreenshotUrl!)
                 .ToList(),
 
+                PopDTO = game.Popularity == null ? null : new Game_popularity
+                {
+                    Url = game.Popularity.Url,
+                    PlayerPeak = game.Popularity.PlayersAllTimePeak,
+                    Reviews = game.Popularity.ReviewsTotal,
+                    Pos_percent = game.Popularity.ReviewsPositivePercent,
+                    Summary = game.Popularity.ReviewsSummary
+                },
+
+                PriceDTO = game.Price == null ? null: new Game_price
+                {
+                    InitialPrice = game.Price.InitialPrice,
+                    FinalPrice = game.Price.FinalPrice,
+                    Discount = game.Price.Discount,
+                    UpdatedAt = game.Price.UpdatedAt
+                }
+
                 // Popularity
                 /*Popularity = game.Popularity,
 

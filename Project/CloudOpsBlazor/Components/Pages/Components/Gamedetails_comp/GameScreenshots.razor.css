@@ -1,0 +1,40 @@
+﻿/* ==========================================
+   SCREENSHOTS
+========================================== */
+
+.game-screenshots {
+    margin: 30px 0;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.screenshot-grid img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.screenshot-grid img:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .screenshot-grid img {
+        height: 180px;
+    }
+}

@@ -1,4 +1,10 @@
-﻿@if (IsVisible)
+﻿@using Recommendations_engine
+@using System.Net.Http.Json
+@using CloudOpsBlazor.Components.Game_details
+@inject HttpClient Http
+@inject ILogger<GameDetails> Logger
+
+@if (IsVisible && Game != null)
 {
     <div class="game-details-overlay">
         <div class="game-details-window">
@@ -8,17 +14,69 @@
                 &times;
             </button>
 
-            <h2>Game Details</h2>
+            @if (IsLoading)
+            {
+                <p>Loading game details...</p>
+            }
+            else if (GameDTO != null)
+            {
+                <GameHero GameDTO="GameDTO" />
+
+                <GameStatistics GameDTO="GameDTO" />
+
+                <GamePopularity GameDTO="GameDTO" />
+
+                <GamePrice GameDTO="GameDTO" />
+
+                <GamePlatforms GameDTO="GameDTO" />
+
+                <GameScreenshots GameDTO="GameDTO" />
+
+                <GameMetadata GameDTO="GameDTO" />
+            }
+            else
+            {
+                <p>Unable to load game details.</p>
+            }
 
         </div>
     </div>
 }
 
 @code {
-    [Parameter]
-    public bool IsVisible { get; set; }
+    private DetailedGameDto? GameDTO;
+    private bool IsLoading;
 
-    [Parameter]
-    public EventCallback OnClose { get; set; }
+    [Parameter] public game_card? Game { get; set; }
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!IsVisible || Game == null)
+        {
+            GameDTO = null;
+            return;
+        }
+
+        IsLoading = true;
+
+        try
+        {
+            GameDTO = await Http.GetFromJsonAsync<DetailedGameDto>(
+                $"api/Games/details/{Game.Appid}");
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Failed to load game details");
+            GameDTO = null;
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
 }
+
+
 

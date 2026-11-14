@@ -1,0 +1,44 @@
+﻿@namespace CloudOpsBlazor.Components.Game_details
+@using Recommendations_engine
+
+@if (GameDTO != null)
+{
+    <div class="game-hero">
+
+        @if (!string.IsNullOrEmpty(GameDTO.HeaderImage))
+        {
+            <img class="game-header-image"
+                 src="@GameDTO.HeaderImage"
+                 alt="@GameDTO.Name" />
+        }
+
+        <div class="game-hero-content">
+
+            <h1>@GameDTO.Name</h1>
+
+            <p class="game-release">
+                Released: @(GameDTO.ReleaseDate ?? "Unknown")
+            </p>
+
+            <p class="game-description">
+                @GameDTO.ShortDescription
+            </p>
+
+            <div class="game-developers">
+                <span>Developer:</span>
+                @(GameDTO.Developers ?? "Unknown")
+            </div>
+
+            <div class="game-publishers">
+                <span>Publisher:</span>
+                @(GameDTO.Publishers ?? "Unknown")
+            </div>
+
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public DetailedGameDto? GameDTO { get; set; }
+}
