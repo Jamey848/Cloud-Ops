@@ -1,0 +1,450 @@
+﻿@page "/Explorer"
+@rendermode InteractiveServer
+@using System.Net.Http.Json
+@using System.Text.Json.Serialization
+@using CloudOpsBlazor.Components.Pages.Shared
+@inject NavigationManager Navigation
+@using Recommendations_engine
+@inject IWebHostEnvironment Environment
+@inject HttpClient Http
+
+@using System.Text.Json
+
+<PageTitle>Game Explorer</PageTitle>
+
+<div class="explorer-container">
+
+    <!-- HEADER -->
+    <div class="explorer-header">
+        <div>
+            <h2>Game Explorer</h2>
+            <p>Discover your next favourite game.</p>
+        </div>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="explorer-search">
+        <span class="search-icon">⌕</span>
+        <input type="text"
+               placeholder="Search games..."
+               @bind="SearchName"
+               @bind:event="oninput" />
+
+        <button type="button" @onclick="LoadGames">
+            Search
+        </button>
+    </div>
+
+    <div class="explorer-layout">
+
+        <!-- FILTER SIDEBAR -->
+        <aside class="explorer-sidebar">
+
+            <div class="sidebar-header">
+                <h3>Filters</h3>
+                <button @onclick="ResetFilters">Reset</button>
+            </div>
+
+            @if (LoadingMetadata)
+            {
+                <p class="loading-text">Loading filters...</p>
+            }
+            else if (!string.IsNullOrEmpty(LoadError))
+            {
+                <p class="error-text">@LoadError</p>
+            }
+            else
+            {
+                <!-- GENRES -->
+                <section class="filter-section">
+                    <h4>Genres</h4>
+
+                    <div class="filter-options">
+                        @foreach (var genre in Genres)
+                        {
+                            <label class="filter-option" @key="genre.GenreId">
+                                <input type="checkbox"
+                                       checked="@SelectedGenres.Contains(genre.GenreId)"
+                                       @onchange="e => ToggleGenre(
+                                       genre.GenreId,
+                                                                          (bool)e.Value!)" />
+
+                        <span>@genre.GenreName</span>
+                    </label>
+                                        }
+                    </div>
+                </section>
+
+                <!-- CATEGORIES -->
+                <section class="filter-section">
+                    <h4>Categories</h4>
+
+                    <div class="filter-options">
+                        @foreach (var category in Categories)
+                        {
+                            <label class="filter-option" @key="category.CategoryId">
+                                <input type="checkbox"
+                                       checked="@SelectedCategories.Contains(category.CategoryId)"
+                                       @onchange="e => ToggleCategory(
+                                       category.CategoryId,
+                                                                          (bool)e.Value!)" />
+
+                        <span>@category.CategoryName</span>
+                    </label>
+                                        }
+                    </div>
+                </section>
+
+                <!-- TAGS -->
+                <section class="filter-section">
+                    <h4>Tags</h4>
+
+                    <div class="filter-options">
+                        @foreach (var tag in Tags)
+                        {
+                            <label class="filter-option" @key="tag.TagId">
+                                <input type="checkbox"
+                                       checked="@SelectedTags.Contains(tag.TagId)"
+                                       @onchange="e => ToggleTag(
+                                       tag.TagId,
+                                                                          (bool)e.Value!)" />
+
+                        <span>@tag.TagName</span>
+                    </label>
+                                        }
+                    </div>
+                </section>
+            }
+
+            <!-- PRICE -->
+            <section class="filter-section">
+                <h4>Maximum price</h4>
+
+                <div class="price-value">
+                    <span>€ @MaxPrice</span>
+                </div>
+
+                <input type="range"
+                       min="0"
+                       max="100"
+                       step="1"
+                       @bind="MaxPrice"
+                       class="price-slider" />
+            </section>
+
+        </aside>
+
+        <!-- RESULTS -->
+        <main class="explorer-results">
+
+            <div class="results-toolbar">
+                <div>
+                    <h3>Explore Games</h3>
+                    <span class="results-subtitle">
+                        Browse your game collection
+                    </span>
+                </div>
+
+                <select @bind="SortOrder">
+                    <option value="popularity">Popularity</option>
+                    <option value="name">Name</option>
+                    <option value="price_asc">Price: Low to High</option>
+                    <option value="price_desc">Price: High to Low</option>
+                    <option value="release">Release Date</option>
+                </select>
+            </div>
+
+            <!-- SELECTED FILTERS -->
+            <div class="selected-filters">
+
+                @foreach (var id in SelectedGenres)
+                {
+                    var genre = Genres.FirstOrDefault(x => x.GenreId == id);
+
+                    if (genre != null)
+                    {
+                        <button class="filter-chip"
+                                @onclick="() => ToggleGenre(id, false)">
+                            @genre.GenreName ×
+                        </button>
+                    }
+                }
+
+                @foreach (var id in SelectedCategories)
+                {
+                    var category = Categories.FirstOrDefault(
+                    x => x.CategoryId == id);
+
+                    if (category != null)
+                    {
+                        <button class="filter-chip"
+                                @onclick="() => ToggleCategory(id, false)">
+                            @category.CategoryName ×
+                        </button>
+                    }
+                }
+
+                @foreach (var id in SelectedTags)
+                {
+                    var tag = Tags.FirstOrDefault(x => x.TagId == id);
+
+                    if (tag != null)
+                    {
+                        <button class="filter-chip"
+                                @onclick="() => ToggleTag(id, false)">
+                            @tag.TagName ×
+                        </button>
+                    }
+                }
+
+            </div>
+
+            <!-- GAME RESULTS -->
+            @if (LoadingGames)
+            {
+                <div class="loading-text">
+                    Loading games...
+                </div>
+            }
+            else if (!string.IsNullOrEmpty(GameLoadError))
+            {
+                <div class="error-text">
+                    @GameLoadError
+                </div>
+            }
+            else if (Games.Count == 0)
+            {
+                <div class="empty-explorer">
+                    <div class="empty-icon">🎮</div>
+
+                    <h3>No games found</h3>
+
+                    <p>
+                        Try adjusting your search or filters.
+                    </p>
+                </div>
+            }
+            else
+            {
+                <div class="game-grid">
+                    @foreach (var game in Games.Take(VisibleGameCount))
+                    {
+                        <GameCard
+                            @key="game.Appid"
+                            Game="game"
+                            Rank="@(Games.IndexOf(game) + 1)" />
+                    }
+                </div>
+
+                @if (VisibleGameCount < Games.Count)
+                {
+                    <div class="load-more-container">
+                        <p>Showing @VisibleGameCount of @Games.Count games</p>
+
+                        <button class="load-more-button"
+                                @onclick="LoadMoreGames">
+                            More
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <div class="load-more-container">
+                        <p>Showing all @Games.Count games</p>
+                    </div>
+                }
+            }
+
+        </main>
+
+    </div>
+</div>
+
+@code {
+    // Pagination and stuff
+    private int VisibleGameCount = 100;
+    private const int GameBatchSize = 100;
+
+    // LOADING STUFF
+    private List<game_card> Games = [];
+
+    private bool LoadingGames = false;
+    private string? GameLoadError;
+
+    // METADATA MODELS
+
+    public class Genre
+    {
+        [JsonPropertyName("genre_id")]
+        public string GenreId { get; set; } = "";
+
+        [JsonPropertyName("genre_name")]
+        public string GenreName { get; set; } = "";
+    }
+
+    public class Category
+    {
+        [JsonPropertyName("categorie_id")]
+        public string CategoryId { get; set; } = "";
+
+        [JsonPropertyName("categorie_name")]
+        public string CategoryName { get; set; } = "";
+    }
+
+    public class Tag
+    {
+        [JsonPropertyName("tag_id")]
+        public int TagId { get; set; }
+
+        [JsonPropertyName("tag_name")]
+        public string TagName { get; set; } = "";
+    }
+
+    // METADATA
+
+    private List<Genre> Genres = [];
+    private List<Category> Categories = [];
+    private List<Tag> Tags = [];
+
+    private bool LoadingMetadata = true;
+    private string? LoadError;
+
+    // SELECTED FILTERS
+
+    private HashSet<string> SelectedGenres = [];
+    private HashSet<string> SelectedCategories = [];
+    private HashSet<long> SelectedTags = [];
+
+    // UI STATE
+
+    private string SearchName = "";
+    private int MaxPrice = 30;
+    private string SortOrder = "popularity";
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var dataPath = Path.Combine(
+                Environment.WebRootPath,
+                "Data"
+            );
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+                NumberHandling = JsonNumberHandling.AllowReadingFromString
+            };
+
+            var genreJson = await File.ReadAllTextAsync(
+                Path.Combine(dataPath, "genres.json")
+            );
+
+            var categoryJson = await File.ReadAllTextAsync(
+                Path.Combine(dataPath, "categories.json")
+            );
+
+            var tagJson = await File.ReadAllTextAsync(
+                Path.Combine(dataPath, "tags.json")
+            );
+
+            Genres = JsonSerializer.Deserialize<List<Genre>>(
+                genreJson, options) ?? [];
+
+            Categories = JsonSerializer.Deserialize<List<Category>>(
+                categoryJson, options) ?? [];
+
+            Tags = JsonSerializer.Deserialize<List<Tag>>(
+                tagJson, options) ?? [];
+        }
+        catch (Exception ex)
+        {
+            LoadError = $"Could not load metadata: {ex.Message}";
+        }
+        finally
+        {
+            LoadingMetadata = false;
+        }
+    }
+
+    // FILTER SELECTION
+
+    private void ToggleGenre(string id, bool selected)
+    {
+        if (selected)
+            SelectedGenres.Add(id);
+        else
+            SelectedGenres.Remove(id);
+    }
+
+    private void ToggleCategory(string id, bool selected)
+    {
+        if (selected)
+            SelectedCategories.Add(id);
+        else
+            SelectedCategories.Remove(id);
+    }
+
+    private void ToggleTag(long id, bool selected)
+    {
+        if (selected)
+            SelectedTags.Add(id);
+        else
+            SelectedTags.Remove(id);
+    }
+
+    private async Task LoadGames()
+    {
+        LoadingGames = true;
+        VisibleGameCount = 100;
+        GameLoadError = null;
+
+        try
+        {
+            var request = new Expl_FilterRequest
+            {
+                Searchname = SearchName,
+                GenreIds = SelectedGenres.ToList(),
+                CategoryIds = SelectedCategories.ToList(),
+                TagIds = SelectedTags.ToList()
+            };
+
+            var response = await Http.PostAsJsonAsync(
+                "api/Games/Filter",
+                request
+            );
+
+            response.EnsureSuccessStatusCode();
+
+            Games = await response.Content
+                .ReadFromJsonAsync<List<game_card>>() ?? [];
+        }
+        catch (Exception ex)
+        {
+            GameLoadError = $"Could not load games: {ex.Message}";
+        }
+        finally
+        {
+            LoadingGames = false;
+        }
+    }
+
+    private void LoadMoreGames()
+    {
+        VisibleGameCount = Math.Min(
+            VisibleGameCount + GameBatchSize,
+            Games.Count
+        );
+    }
+
+    private void ResetFilters()
+    {
+        SelectedGenres.Clear();
+        SelectedCategories.Clear();
+        SelectedTags.Clear();
+
+        SearchName = "";
+        MaxPrice = 30;
+        SortOrder = "popularity";
+    }
+}

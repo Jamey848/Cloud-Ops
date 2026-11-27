@@ -1,0 +1,55 @@
+﻿/* ==========================================
+   STATISTICS
+========================================== */
+
+.game-statistics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin: 25px 0;
+}
+
+.stat-card {
+    background: #202832;
+    border: 1px solid #2d3947;
+    padding: 18px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: background 0.2s;
+}
+
+.stat-card:hover {
+    background: #293746;
+}
+
+.stat-card span {
+    color: #8f98a0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.stat-card strong {
+    color: #66c0f4;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .game-statistics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .stat-card {
+        padding: 13px;
+    }
+
+    .stat-card strong {
+        font-size: 19px;
+    }
+}

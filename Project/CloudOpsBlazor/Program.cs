@@ -1,4 +1,7 @@
 using CloudOpsBlazor.Components;
+using CloudOpsBlazor.Services;
+using Supabase;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
 namespace CloudOpsBlazor
 {
@@ -18,6 +21,20 @@ namespace CloudOpsBlazor
                 builder.Configuration["ApiBaseUrl"]
                 ?? "https://localhost:7030/")
             });
+
+            builder.Services.AddScoped<ProtectedSessionStorage>();
+
+            builder.Services.AddScoped(provider =>
+            {
+                var configuration = provider.GetRequiredService<IConfiguration>();
+
+                var url = configuration["Supabase:Url"]!;
+                var key = configuration["Supabase:Key"]!;
+
+                return new Supabase.Client(url, key);
+            });
+
+            builder.Services.AddScoped<AuthService>();
 
             builder.Services.AddHttpClient();
 
@@ -40,6 +57,7 @@ namespace CloudOpsBlazor
                 .AddInteractiveServerRenderMode();
 
             app.Run();
+
         }
     }
 }

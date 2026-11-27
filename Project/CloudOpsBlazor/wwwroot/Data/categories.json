@@ -1,0 +1,162 @@
+[
+    {
+        "categorie_id": "Multi-player",
+        "categorie_name": "Multi-player"
+    },
+    {
+        "categorie_id": "Cross-Platform Multiplayer",
+        "categorie_name": "Cross-Platform Multiplayer"
+    },
+    {
+        "categorie_id": "Steam Trading Cards",
+        "categorie_name": "Steam Trading Cards"
+    },
+    {
+        "categorie_id": "Steam Workshop",
+        "categorie_name": "Steam Workshop"
+    },
+    {
+        "categorie_id": "In-App Purchases",
+        "categorie_name": "In-App Purchases"
+    },
+    {
+        "categorie_id": "Valve Anti-Cheat enabled",
+        "categorie_name": "Valve Anti-Cheat enabled"
+    },
+    {
+        "categorie_id": "Stats",
+        "categorie_name": "Stats"
+    },
+    {
+        "categorie_id": "Remote Play on Phone",
+        "categorie_name": "Remote Play on Phone"
+    },
+    {
+        "categorie_id": "Remote Play on Tablet",
+        "categorie_name": "Remote Play on Tablet"
+    },
+    {
+        "categorie_id": "Remote Play on TV",
+        "categorie_name": "Remote Play on TV"
+    },
+    {
+        "categorie_id": "Steam Timeline",
+        "categorie_name": "Steam Timeline"
+    },
+    {
+        "categorie_id": "PvP",
+        "categorie_name": "PvP"
+    },
+    {
+        "categorie_id": "Online PvP",
+        "categorie_name": "Online PvP"
+    },
+    {
+        "categorie_id": "Co-op",
+        "categorie_name": "Co-op"
+    },
+    {
+        "categorie_id": "SteamVR Collectibles",
+        "categorie_name": "SteamVR Collectibles"
+    },
+    {
+        "categorie_id": "Single-player",
+        "categorie_name": "Single-player"
+    },
+    {
+        "categorie_id": "Online Co-op",
+        "categorie_name": "Online Co-op"
+    },
+    {
+        "categorie_id": "Steam Achievements",
+        "categorie_name": "Steam Achievements"
+    },
+    {
+        "categorie_id": "Full controller support",
+        "categorie_name": "Full controller support"
+    },
+    {
+        "categorie_id": "Captions available",
+        "categorie_name": "Captions available"
+    },
+    {
+        "categorie_id": "Partial Controller Support",
+        "categorie_name": "Partial Controller Support"
+    },
+    {
+        "categorie_id": "Includes level editor",
+        "categorie_name": "Includes level editor"
+    },
+    {
+        "categorie_id": "Commentary available",
+        "categorie_name": "Commentary available"
+    },
+    {
+        "categorie_id": "Steam Cloud",
+        "categorie_name": "Steam Cloud"
+    },
+    {
+        "categorie_id": "Family Sharing",
+        "categorie_name": "Family Sharing"
+    },
+    {
+        "categorie_id": "MMO",
+        "categorie_name": "MMO"
+    },
+    {
+        "categorie_id": "LAN PvP",
+        "categorie_name": "LAN PvP"
+    },
+    {
+        "categorie_id": "LAN Co-op",
+        "categorie_name": "LAN Co-op"
+    },
+    {
+        "categorie_id": "Includes Source SDK",
+        "categorie_name": "Includes Source SDK"
+    },
+    {
+        "categorie_id": "Shared/Split Screen Co-op",
+        "categorie_name": "Shared/Split Screen Co-op"
+    },
+    {
+        "categorie_id": "Shared/Split Screen",
+        "categorie_name": "Shared/Split Screen"
+    },
+    {
+        "categorie_id": "Remote Play Together",
+        "categorie_name": "Remote Play Together"
+    },
+    {
+        "categorie_id": "Tracked Controller Support",
+        "categorie_name": "Tracked Controller Support"
+    },
+    {
+        "categorie_id": "VR Supported",
+        "categorie_name": "VR Supported"
+    },
+    {
+        "categorie_id": "HDR available",
+        "categorie_name": "HDR available"
+    },
+    {
+        "categorie_id": "Shared/Split Screen PvP",
+        "categorie_name": "Shared/Split Screen PvP"
+    },
+    {
+        "categorie_id": "Steam Leaderboards",
+        "categorie_name": "Steam Leaderboards"
+    },
+    {
+        "categorie_id": "VR Support",
+        "categorie_name": "VR Support"
+    },
+    {
+        "categorie_id": "Steam Turn Notifications",
+        "categorie_name": "Steam Turn Notifications"
+    },
+    {
+        "categorie_id": "VR Only",
+        "categorie_name": "VR Only"
+    }
+]

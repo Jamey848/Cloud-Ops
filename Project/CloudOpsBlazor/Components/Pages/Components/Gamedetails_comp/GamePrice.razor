@@ -1,0 +1,52 @@
+﻿@namespace CloudOpsBlazor.Components.Game_details
+@using Recommendations_engine
+
+@if (GameDTO?.PriceDTO != null)
+{
+    <div class="game-price">
+        <h3>Price</h3>
+
+        <div class="price-content">
+
+            <div class="price-main">
+                <span>Current Price</span>
+
+                <strong>
+                    @(GameDTO.PriceDTO.FinalPrice?.ToString("C2",
+                                    System.Globalization.CultureInfo.GetCultureInfo("nl-BE")) ?? "N/A")
+                                                                                                   </strong>
+                                                                                               </div>
+
+            <div class="price-details">
+
+                <div class="price-item">
+                    <span>Original Price</span>
+                    <strong>
+                        @(GameDTO.PriceDTO.InitialPrice?.ToString("C2",
+                                            System.Globalization.CultureInfo.GetCultureInfo("nl-BE")) ?? "N/A")
+                </strong>
+            </div>
+
+                <div class="price-item">
+                    <span>Discount</span>
+                    <strong class="discount">
+                        @(GameDTO.PriceDTO.Discount?.ToString() + "%" ?? "N/A")
+                    </strong>
+                </div>
+
+                <div class="price-item">
+                    <span>Last Updated</span>
+                    <strong>
+                        @(GameDTO.PriceDTO.UpdatedAt?.ToString("dd/MM/yyyy") ?? "N/A")
+                    </strong>
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public DetailedGameDto? GameDTO { get; set; }
+}
+

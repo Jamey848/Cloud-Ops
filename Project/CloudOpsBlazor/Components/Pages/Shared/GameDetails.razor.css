@@ -1,32 +1,84 @@
 ﻿
+
+/* ==========================================
+   GAME DETAILS - MODAL
+========================================== */
+
 .game-details-overlay {
     position: fixed;
     inset: 0;
-    z-index: 9999;
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    padding: 20px;
 }
 
 .game-details-window {
+    background: #171a21;
+    color: #c7d5e0;
+    width: 100%;
+    max-width: 1050px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
     position: relative;
-    width: 80%;
-    max-width: 850px;
-    min-height: 450px;
-    background: #151827;
-    border: 1px solid #49316e;
-    border-radius: 18px;
-    padding: 30px;
+    padding: 0 28px 30px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.6);
 }
+
+    /* Custom scrollbar */
+
+    .game-details-window::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .game-details-window::-webkit-scrollbar-thumb {
+        background: #3b4654;
+        border-radius: 10px;
+    }
+
+/* Close button */
 
 .close-button {
     position: absolute;
-    top: 12px;
-    right: 18px;
-    background: none;
-    border: none;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.75);
     color: white;
-    font-size: 30px;
+    border: none;
+    border-radius: 6px;
+    width: 34px;
+    height: 34px;
+    font-size: 23px;
     cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s;
+}
+
+    .close-button:hover {
+        background: #c0392b;
+    }
+
+/* Section headings */
+
+.game-details-window h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 15px;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .game-details-overlay {
+        padding: 8px;
+    }
+
+    .game-details-window {
+        padding: 0 16px 20px;
+        max-height: 95vh;
+    }
 }

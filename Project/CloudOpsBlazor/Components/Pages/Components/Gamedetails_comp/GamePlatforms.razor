@@ -1,0 +1,36 @@
+﻿@namespace CloudOpsBlazor.Components.Game_details
+@using Recommendations_engine
+
+@if (GameDTO != null)
+{
+    <div class="game-platforms">
+        <h3>Platform support</h3>
+
+        @if (GameDTO.Windows == true)
+        {
+            <span class="platform-supported">Windows</span>
+        }
+
+        @if (GameDTO.Mac == true)
+        {
+            <span class="platform-supported">Mac</span>
+        }
+
+        @if (GameDTO.Linux == true)
+        {
+            <span class="platform-supported">Linux</span>
+        }
+
+        @if (GameDTO.Windows != true &&
+            GameDTO.Mac != true &&
+            GameDTO.Linux != true)
+        {
+            <span>Unknown platform support</span>
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public DetailedGameDto? GameDTO { get; set; }
+}

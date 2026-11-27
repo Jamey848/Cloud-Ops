@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Recommendation_engine;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Recommendations_engine
@@ -52,6 +53,19 @@ namespace Recommendations_engine
 
         [Column("header_image")]
         public string? Header_image { get; set; }
+
+
+        // One-to-one relationships
+        public Popularity? Popularity { get; set; }
+        public Price? Price { get; set; }
+
+        // One-to-many relationships
+        public ICollection<Screenshot>? Screenshots { get; set; } = [];
+
+        // Many-to-many through junction entities
+        public ICollection<GameGenre>? GameGenres { get; set; } = [];
+        public ICollection<GameTag>? GameTags { get; set; } = [];
+        public ICollection<GameCategory>? GameCategories { get; set; } = [];
 
     }
 }

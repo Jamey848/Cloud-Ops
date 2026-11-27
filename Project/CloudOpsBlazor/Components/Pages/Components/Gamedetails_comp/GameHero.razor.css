@@ -1,0 +1,63 @@
+﻿/* ==========================================
+   GAME HERO
+========================================== */
+
+.game-hero {
+    margin: 0 -28px 25px;
+}
+
+.game-header-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.game-hero-content {
+    padding: 22px 28px;
+    background: linear-gradient(180deg, #202c3a, #171a21);
+}
+
+.game-hero-content h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.game-description {
+    color: #c7d5e0;
+    line-height: 1.7;
+    font-size: 14px;
+    margin: 18px 0;
+    max-width: 850px;
+}
+
+.game-release,
+.game-developers,
+.game-publishers {
+    font-size: 13px;
+    color: #8f98a0;
+    margin: 7px 0;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .game-hero {
+        margin: 0 -16px 20px;
+    }
+
+    .game-header-image {
+        height: 190px;
+    }
+
+    .game-hero-content {
+        padding: 18px 16px;
+    }
+
+    .game-hero-content h1 {
+        font-size: 23px;
+    }
+}

@@ -1,5 +1,23 @@
 [
   {
+    "ContainingType": "Recommendations_engine.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_1",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Recommendations_engine.GamesController",
     "Method": "GetGames",
     "RelativePath": "api/Games",
@@ -62,16 +80,22 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Recommendations_engine.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "Recommendations_engine.GamesController",
+    "Method": "GetGame",
+    "RelativePath": "api/Games/details/{appId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "appId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Recommendations_engine.WeatherForecast, Recommendation_engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Recommendation_engine.DetailedGameDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -79,7 +103,64 @@
         ],
         "StatusCode": 200
       }
+    ]
+  },
+  {
+    "ContainingType": "Recommendations_engine.GamesController",
+    "Method": "GetMetadata",
+    "RelativePath": "api/Games/Filter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Recommendation_engine.Expl_FilterRequest",
+        "IsRequired": true
+      }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Recommendations_engine.AuthenticationController",
+    "Method": "AddUser",
+    "RelativePath": "Authentication/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert_user",
+        "Type": "Recommendation_engine.AppUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Recommendations_engine.AuthenticationController",
+    "Method": "GetUser",
+    "RelativePath": "Authentication/GetUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Recommendation_engine.AppUser",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

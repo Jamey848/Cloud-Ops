@@ -1,0 +1,56 @@
+﻿@namespace CloudOpsBlazor.Components.Game_details
+@using Recommendations_engine
+
+@if (GameDTO?.PopDTO != null)
+{
+    <div class="game-popularity">
+        <h3>Popularity</h3>
+
+        <div class="popularity-grid">
+
+            <div class="popularity-card">
+                <span>Peak Players</span>
+                <strong>
+                    @(GameDTO.PopDTO.PlayerPeak?.ToString("N0") ?? "N/A")
+                </strong>
+            </div>
+
+            <div class="popularity-card">
+                <span>Total Reviews</span>
+                <strong>
+                    @(GameDTO.PopDTO.Reviews?.ToString("N0") ?? "N/A")
+                </strong>
+            </div>
+
+            <div class="popularity-card">
+                <span>Positive Reviews</span>
+                <strong>
+                    @(GameDTO.PopDTO.Pos_percent?.ToString("0.#") + "%" ?? "N/A")
+                </strong>
+            </div>
+
+        </div>
+
+        @if (!string.IsNullOrWhiteSpace(GameDTO.PopDTO.Summary))
+        {
+            <p class="popularity-summary">
+                @GameDTO.PopDTO.Summary
+            </p>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(GameDTO.PopDTO.Url))
+        {
+            <a href="@GameDTO.PopDTO.Url"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="popularity-link">
+                View popularity source ↗
+            </a>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public DetailedGameDto? GameDTO { get; set; }
+}
+

@@ -1,0 +1,128 @@
+﻿@using CloudOpsBlazor.Services
+@inject AuthService Auth
+
+@if (IsVisible)
+{
+    <div class="login-page">
+
+        <div class="login-window">
+
+            <div class="window-header">
+                <div class="window-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+
+                <span class="window-title">CLOUDOPS / AUTHENTICATION</span>
+
+                <button class="close-button" @onclick="CloseLogin">
+                    ×
+                </button>
+            </div>
+
+            <div class="login-content">
+
+                <div class="login-logo">
+                    <span>CO</span>
+                </div>
+
+                <h2>Welcome back</h2>
+                <p class="subtitle">Sign in to access your CloudOps workspace.</p>
+
+                <div class="input-group">
+                    <label>Email address</label>
+                    <input @bind="email"
+                           type="email"
+                           placeholder="name@company.com" />
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input @bind="password"
+                           type="password"
+                           placeholder="Enter your password"
+                           @onkeydown="HandleKeyDown" />
+                </div>
+
+                <button class="login-button"
+                        @onclick="Login"
+                        disabled="@isLoading">
+
+                    @(isLoading ? "Signing in..." : "Sign in")
+
+                    @if (!isLoading)
+                    {
+                        <span class="button-arrow">→</span>
+                    }
+                </button>
+
+                @if (!string.IsNullOrEmpty(message))
+                {
+                    <div class="login-message @(loginSuccess ? "success" : "error")">
+                        @message
+                    </div>
+                }
+
+                <div class="login-footer">
+                    <span>SECURE ACCESS</span>
+                    <span>© 2026 CLOUDOPS</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+}
+
+@code {
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private string email = "";
+    private string password = "";
+    private string message = "";
+
+    private bool isLoading = false;
+    private bool loginSuccess = false;
+
+    private async Task Login()
+    {
+        if (isLoading)
+            return;
+
+        isLoading = true;
+        message = "";
+
+        try
+        {
+            loginSuccess = await Auth.Login(email, password);
+
+            message = loginSuccess
+                ? "Authentication successful!"
+                : "Invalid email or password.";
+        }
+        catch
+        {
+            loginSuccess = false;
+            message = "Something went wrong. Please try again.";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task HandleKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+            await Login();
+    }
+
+    private async Task CloseLogin()
+    {
+        await OnClose.InvokeAsync();
+    }
+}
+
+

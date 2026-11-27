@@ -32,6 +32,6 @@
 
     private async Task SelectGame()
     {
-        await OnGameSelected.InvokeAsync();
+        await OnGameSelected.InvokeAsync(Game);
     }
 }

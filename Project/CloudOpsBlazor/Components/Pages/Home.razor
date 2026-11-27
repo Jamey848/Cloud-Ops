@@ -4,6 +4,7 @@
 @inject HttpClient Http
 @using CloudOpsBlazor.Components.Pages.Shared
 @rendermode InteractiveServer
+@inject Services.AuthService Auth
 
 <PageTitle>Home</PageTitle>
 
@@ -85,8 +86,26 @@
 
     </section>
 
-    <GameDetails IsVisible="@isGameDetailsOpen"
+    <button @onclick="OpenLogin">
+        Login check</button>
+
+    <button @onclick="OpenRegister">
+        Register
+    </button>
+
+    <GameDetails 
+                Game="selectedGame"
+                IsVisible="@isGameDetailsOpen"
                  OnClose="CloseGameDetails" />
+
+    <UserLogin
+        IsVisible="@isLoginOpen"
+        OnClose="CloseLogin" />
+
+    <UserRegister IsVisible="@isRegisterOpen"
+                  OnClose="CloseRegister" />
+
+    <button @onclick="CheckIt">Click</button>
 
 </div>
 
@@ -94,7 +113,9 @@
     private List<game_card>? games;
     private string? errorMessage;
     public bool isGameDetailsOpen = false;
+    public bool isLoginOpen = false;
     private game_card? selectedGame;
+    public bool isRegisterOpen = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -110,6 +131,26 @@
         }
     }
 
+    private void OpenRegister()
+    {
+        isRegisterOpen = true;
+    }
+
+    private void CloseRegister()
+    {
+        isRegisterOpen = false;
+    }
+
+    private void OpenLogin()
+    {
+        isLoginOpen = true;
+    }
+
+    private void CloseLogin()
+    {
+        isLoginOpen = false;
+    }
+
     private void OpenGameDetails(game_card game)
     {
         selectedGame = game;
@@ -120,5 +161,10 @@
     {
         isGameDetailsOpen = false;
         selectedGame = null;
+    }
+
+    private async void CheckIt()
+    {
+        await Auth.CheckStorage();
     }
 }

@@ -1,0 +1,53 @@
+﻿@namespace CloudOpsBlazor.Components.Game_details
+@using Recommendations_engine
+
+@if (GameDTO != null)
+{
+    <div class="game-metadata">
+
+        @if (GameDTO.Genres.Count > 0)
+        {
+            <h3>Genres</h3>
+            <div class="metadata-tags">
+                @foreach (var genre in GameDTO.Genres)
+                {
+                    <span>@genre</span>
+                }
+            </div>
+        }
+
+        @if (GameDTO.Tags.Count > 0)
+        {
+            <h3>Tags</h3>
+            <div class="metadata-tags">
+                @foreach (var tag in GameDTO.Tags)
+                {
+                    <span>@tag</span>
+                }
+            </div>
+        }
+
+        @if (GameDTO.Categories.Count > 0)
+        {
+            <h3>Categories</h3>
+            <div class="metadata-tags">
+                @foreach (var category in GameDTO.Categories)
+                {
+                    <span>@category</span>
+                }
+            </div>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(GameDTO.Notes))
+        {
+            <h3>Additional notes</h3>
+            <p>@GameDTO.Notes</p>
+        }
+
+    </div>
+}
+
+@code {
+    [Parameter]
+    public DetailedGameDto? GameDTO { get; set; }
+}

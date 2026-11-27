@@ -1,0 +1,1810 @@
+[
+    {
+        "tag_id": "1",
+        "tag_name": "1980s"
+    },
+    {
+        "tag_id": "2",
+        "tag_name": "1990's"
+    },
+    {
+        "tag_id": "3",
+        "tag_name": "2.5D"
+    },
+    {
+        "tag_id": "4",
+        "tag_name": "2D"
+    },
+    {
+        "tag_id": "5",
+        "tag_name": "2D Fighter"
+    },
+    {
+        "tag_id": "6",
+        "tag_name": "2D Platformer"
+    },
+    {
+        "tag_id": "7",
+        "tag_name": "360 Video"
+    },
+    {
+        "tag_id": "8",
+        "tag_name": "3D"
+    },
+    {
+        "tag_id": "9",
+        "tag_name": "3D Fighter"
+    },
+    {
+        "tag_id": "10",
+        "tag_name": "3D Platformer"
+    },
+    {
+        "tag_id": "11",
+        "tag_name": "3D Vision"
+    },
+    {
+        "tag_id": "12",
+        "tag_name": "4 Player Local"
+    },
+    {
+        "tag_id": "13",
+        "tag_name": "4X"
+    },
+    {
+        "tag_id": "14",
+        "tag_name": "6DOF"
+    },
+    {
+        "tag_id": "15",
+        "tag_name": "8-bit Music"
+    },
+    {
+        "tag_id": "16",
+        "tag_name": "ATV"
+    },
+    {
+        "tag_id": "17",
+        "tag_name": "Abstract"
+    },
+    {
+        "tag_id": "18",
+        "tag_name": "Action"
+    },
+    {
+        "tag_id": "19",
+        "tag_name": "Action RPG"
+    },
+    {
+        "tag_id": "20",
+        "tag_name": "Action RTS"
+    },
+    {
+        "tag_id": "21",
+        "tag_name": "Action Roguelike"
+    },
+    {
+        "tag_id": "22",
+        "tag_name": "Action-Adventure"
+    },
+    {
+        "tag_id": "23",
+        "tag_name": "Addictive"
+    },
+    {
+        "tag_id": "24",
+        "tag_name": "Adventure"
+    },
+    {
+        "tag_id": "25",
+        "tag_name": "Agriculture"
+    },
+    {
+        "tag_id": "26",
+        "tag_name": "Aliens"
+    },
+    {
+        "tag_id": "27",
+        "tag_name": "Alternate History"
+    },
+    {
+        "tag_id": "28",
+        "tag_name": "Ambient"
+    },
+    {
+        "tag_id": "29",
+        "tag_name": "America"
+    },
+    {
+        "tag_id": "30",
+        "tag_name": "Animation & Modeling"
+    },
+    {
+        "tag_id": "31",
+        "tag_name": "Anime"
+    },
+    {
+        "tag_id": "32",
+        "tag_name": "Arcade"
+    },
+    {
+        "tag_id": "33",
+        "tag_name": "Archery"
+    },
+    {
+        "tag_id": "34",
+        "tag_name": "Arena Shooter"
+    },
+    {
+        "tag_id": "35",
+        "tag_name": "Artificial Intelligence"
+    },
+    {
+        "tag_id": "36",
+        "tag_name": "Assassin"
+    },
+    {
+        "tag_id": "37",
+        "tag_name": "Asymmetric VR"
+    },
+    {
+        "tag_id": "38",
+        "tag_name": "Asynchronous Multiplayer"
+    },
+    {
+        "tag_id": "39",
+        "tag_name": "Atmospheric"
+    },
+    {
+        "tag_id": "40",
+        "tag_name": "Audio Production"
+    },
+    {
+        "tag_id": "41",
+        "tag_name": "Auto Battler"
+    },
+    {
+        "tag_id": "42",
+        "tag_name": "Automation"
+    },
+    {
+        "tag_id": "43",
+        "tag_name": "Automobile Sim"
+    },
+    {
+        "tag_id": "44",
+        "tag_name": "BMX"
+    },
+    {
+        "tag_id": "45",
+        "tag_name": "Base-Building"
+    },
+    {
+        "tag_id": "46",
+        "tag_name": "Baseball"
+    },
+    {
+        "tag_id": "47",
+        "tag_name": "Based On A Novel"
+    },
+    {
+        "tag_id": "48",
+        "tag_name": "Basketball"
+    },
+    {
+        "tag_id": "49",
+        "tag_name": "Battle Royale"
+    },
+    {
+        "tag_id": "50",
+        "tag_name": "Beat 'em up"
+    },
+    {
+        "tag_id": "51",
+        "tag_name": "Beautiful"
+    },
+    {
+        "tag_id": "52",
+        "tag_name": "Benchmark"
+    },
+    {
+        "tag_id": "53",
+        "tag_name": "Bikes"
+    },
+    {
+        "tag_id": "54",
+        "tag_name": "Birds"
+    },
+    {
+        "tag_id": "55",
+        "tag_name": "Blood"
+    },
+    {
+        "tag_id": "56",
+        "tag_name": "Board Game"
+    },
+    {
+        "tag_id": "57",
+        "tag_name": "Boomer Shooter"
+    },
+    {
+        "tag_id": "58",
+        "tag_name": "Boss Rush"
+    },
+    {
+        "tag_id": "59",
+        "tag_name": "Bowling"
+    },
+    {
+        "tag_id": "60",
+        "tag_name": "Boxing"
+    },
+    {
+        "tag_id": "61",
+        "tag_name": "Building"
+    },
+    {
+        "tag_id": "62",
+        "tag_name": "Bullet Hell"
+    },
+    {
+        "tag_id": "63",
+        "tag_name": "Bullet Time"
+    },
+    {
+        "tag_id": "64",
+        "tag_name": "CRPG"
+    },
+    {
+        "tag_id": "65",
+        "tag_name": "Capitalism"
+    },
+    {
+        "tag_id": "66",
+        "tag_name": "Card Battler"
+    },
+    {
+        "tag_id": "67",
+        "tag_name": "Card Game"
+    },
+    {
+        "tag_id": "68",
+        "tag_name": "Cartoon"
+    },
+    {
+        "tag_id": "69",
+        "tag_name": "Cartoony"
+    },
+    {
+        "tag_id": "70",
+        "tag_name": "Casual"
+    },
+    {
+        "tag_id": "71",
+        "tag_name": "Cats"
+    },
+    {
+        "tag_id": "72",
+        "tag_name": "Character Action Game"
+    },
+    {
+        "tag_id": "73",
+        "tag_name": "Character Customization"
+    },
+    {
+        "tag_id": "74",
+        "tag_name": "Chess"
+    },
+    {
+        "tag_id": "75",
+        "tag_name": "Choices Matter"
+    },
+    {
+        "tag_id": "76",
+        "tag_name": "Choose Your Own Adventure"
+    },
+    {
+        "tag_id": "77",
+        "tag_name": "Cinematic"
+    },
+    {
+        "tag_id": "78",
+        "tag_name": "City Builder"
+    },
+    {
+        "tag_id": "79",
+        "tag_name": "Class-Based"
+    },
+    {
+        "tag_id": "80",
+        "tag_name": "Classic"
+    },
+    {
+        "tag_id": "81",
+        "tag_name": "Clicker"
+    },
+    {
+        "tag_id": "82",
+        "tag_name": "Co-op"
+    },
+    {
+        "tag_id": "83",
+        "tag_name": "Co-op Campaign"
+    },
+    {
+        "tag_id": "84",
+        "tag_name": "Coding"
+    },
+    {
+        "tag_id": "85",
+        "tag_name": "Cold War"
+    },
+    {
+        "tag_id": "86",
+        "tag_name": "Collectathon"
+    },
+    {
+        "tag_id": "87",
+        "tag_name": "Colony Sim"
+    },
+    {
+        "tag_id": "88",
+        "tag_name": "Colorful"
+    },
+    {
+        "tag_id": "89",
+        "tag_name": "Combat"
+    },
+    {
+        "tag_id": "90",
+        "tag_name": "Combat Racing"
+    },
+    {
+        "tag_id": "91",
+        "tag_name": "Comedy"
+    },
+    {
+        "tag_id": "92",
+        "tag_name": "Comic Book"
+    },
+    {
+        "tag_id": "93",
+        "tag_name": "Competitive"
+    },
+    {
+        "tag_id": "94",
+        "tag_name": "Conspiracy"
+    },
+    {
+        "tag_id": "95",
+        "tag_name": "Controller"
+    },
+    {
+        "tag_id": "96",
+        "tag_name": "Conversation"
+    },
+    {
+        "tag_id": "97",
+        "tag_name": "Cooking"
+    },
+    {
+        "tag_id": "98",
+        "tag_name": "Cozy"
+    },
+    {
+        "tag_id": "99",
+        "tag_name": "Crafting"
+    },
+    {
+        "tag_id": "100",
+        "tag_name": "Creature Collector"
+    },
+    {
+        "tag_id": "101",
+        "tag_name": "Cricket"
+    },
+    {
+        "tag_id": "102",
+        "tag_name": "Crime"
+    },
+    {
+        "tag_id": "103",
+        "tag_name": "Crowdfunded"
+    },
+    {
+        "tag_id": "104",
+        "tag_name": "Cult Classic"
+    },
+    {
+        "tag_id": "105",
+        "tag_name": "Cute"
+    },
+    {
+        "tag_id": "106",
+        "tag_name": "Cyberpunk"
+    },
+    {
+        "tag_id": "107",
+        "tag_name": "Cycling"
+    },
+    {
+        "tag_id": "108",
+        "tag_name": "Dark"
+    },
+    {
+        "tag_id": "109",
+        "tag_name": "Dark Comedy"
+    },
+    {
+        "tag_id": "110",
+        "tag_name": "Dark Fantasy"
+    },
+    {
+        "tag_id": "111",
+        "tag_name": "Dark Humor"
+    },
+    {
+        "tag_id": "112",
+        "tag_name": "Dating Sim"
+    },
+    {
+        "tag_id": "113",
+        "tag_name": "Deckbuilding"
+    },
+    {
+        "tag_id": "114",
+        "tag_name": "Demons"
+    },
+    {
+        "tag_id": "115",
+        "tag_name": "Design & Illustration"
+    },
+    {
+        "tag_id": "116",
+        "tag_name": "Destruction"
+    },
+    {
+        "tag_id": "117",
+        "tag_name": "Detective"
+    },
+    {
+        "tag_id": "118",
+        "tag_name": "Dice"
+    },
+    {
+        "tag_id": "119",
+        "tag_name": "Difficult"
+    },
+    {
+        "tag_id": "120",
+        "tag_name": "Dinosaurs"
+    },
+    {
+        "tag_id": "121",
+        "tag_name": "Diplomacy"
+    },
+    {
+        "tag_id": "122",
+        "tag_name": "Documentary"
+    },
+    {
+        "tag_id": "123",
+        "tag_name": "Dog"
+    },
+    {
+        "tag_id": "124",
+        "tag_name": "Dragons"
+    },
+    {
+        "tag_id": "125",
+        "tag_name": "Drama"
+    },
+    {
+        "tag_id": "126",
+        "tag_name": "Driving"
+    },
+    {
+        "tag_id": "127",
+        "tag_name": "Dungeon Crawler"
+    },
+    {
+        "tag_id": "128",
+        "tag_name": "Dungeons & Dragons"
+    },
+    {
+        "tag_id": "129",
+        "tag_name": "Dwarf"
+    },
+    {
+        "tag_id": "130",
+        "tag_name": "Dynamic Narration"
+    },
+    {
+        "tag_id": "131",
+        "tag_name": "Dystopian "
+    },
+    {
+        "tag_id": "132",
+        "tag_name": "Early Access"
+    },
+    {
+        "tag_id": "133",
+        "tag_name": "Economy"
+    },
+    {
+        "tag_id": "134",
+        "tag_name": "Education"
+    },
+    {
+        "tag_id": "135",
+        "tag_name": "Electronic"
+    },
+    {
+        "tag_id": "136",
+        "tag_name": "Electronic Music"
+    },
+    {
+        "tag_id": "137",
+        "tag_name": "Elf"
+    },
+    {
+        "tag_id": "138",
+        "tag_name": "Emotional"
+    },
+    {
+        "tag_id": "139",
+        "tag_name": "Epic"
+    },
+    {
+        "tag_id": "140",
+        "tag_name": "Episodic"
+    },
+    {
+        "tag_id": "141",
+        "tag_name": "Escape Room"
+    },
+    {
+        "tag_id": "142",
+        "tag_name": "Experience"
+    },
+    {
+        "tag_id": "143",
+        "tag_name": "Experimental"
+    },
+    {
+        "tag_id": "144",
+        "tag_name": "Exploration"
+    },
+    {
+        "tag_id": "145",
+        "tag_name": "Extraction Shooter"
+    },
+    {
+        "tag_id": "146",
+        "tag_name": "FMV"
+    },
+    {
+        "tag_id": "147",
+        "tag_name": "FPS"
+    },
+    {
+        "tag_id": "148",
+        "tag_name": "Faith"
+    },
+    {
+        "tag_id": "149",
+        "tag_name": "Family Friendly"
+    },
+    {
+        "tag_id": "150",
+        "tag_name": "Fantasy"
+    },
+    {
+        "tag_id": "151",
+        "tag_name": "Farming"
+    },
+    {
+        "tag_id": "152",
+        "tag_name": "Farming Sim"
+    },
+    {
+        "tag_id": "153",
+        "tag_name": "Fast-Paced"
+    },
+    {
+        "tag_id": "154",
+        "tag_name": "Feature Film"
+    },
+    {
+        "tag_id": "155",
+        "tag_name": "Female Protagonist"
+    },
+    {
+        "tag_id": "156",
+        "tag_name": "Fighting"
+    },
+    {
+        "tag_id": "157",
+        "tag_name": "First-Person"
+    },
+    {
+        "tag_id": "158",
+        "tag_name": "Fishing"
+    },
+    {
+        "tag_id": "159",
+        "tag_name": "Flight"
+    },
+    {
+        "tag_id": "160",
+        "tag_name": "Football"
+    },
+    {
+        "tag_id": "161",
+        "tag_name": "Football (American)"
+    },
+    {
+        "tag_id": "162",
+        "tag_name": "Football (Soccer)"
+    },
+    {
+        "tag_id": "163",
+        "tag_name": "Foreign"
+    },
+    {
+        "tag_id": "164",
+        "tag_name": "Fox"
+    },
+    {
+        "tag_id": "165",
+        "tag_name": "Free to Play"
+    },
+    {
+        "tag_id": "166",
+        "tag_name": "Funny"
+    },
+    {
+        "tag_id": "167",
+        "tag_name": "Futuristic"
+    },
+    {
+        "tag_id": "168",
+        "tag_name": "Gambling"
+    },
+    {
+        "tag_id": "169",
+        "tag_name": "Game Development"
+    },
+    {
+        "tag_id": "170",
+        "tag_name": "GameMaker"
+    },
+    {
+        "tag_id": "171",
+        "tag_name": "Games Workshop"
+    },
+    {
+        "tag_id": "172",
+        "tag_name": "Gaming"
+    },
+    {
+        "tag_id": "173",
+        "tag_name": "God Game"
+    },
+    {
+        "tag_id": "174",
+        "tag_name": "Golf"
+    },
+    {
+        "tag_id": "175",
+        "tag_name": "Gore"
+    },
+    {
+        "tag_id": "176",
+        "tag_name": "Gothic"
+    },
+    {
+        "tag_id": "177",
+        "tag_name": "Grand Strategy"
+    },
+    {
+        "tag_id": "178",
+        "tag_name": "Great Soundtrack"
+    },
+    {
+        "tag_id": "179",
+        "tag_name": "Grid-Based Movement"
+    },
+    {
+        "tag_id": "180",
+        "tag_name": "Gun Customization"
+    },
+    {
+        "tag_id": "181",
+        "tag_name": "Hack and Slash"
+    },
+    {
+        "tag_id": "182",
+        "tag_name": "Hacking"
+    },
+    {
+        "tag_id": "183",
+        "tag_name": "Hand-drawn"
+    },
+    {
+        "tag_id": "184",
+        "tag_name": "Hardware"
+    },
+    {
+        "tag_id": "185",
+        "tag_name": "Heist"
+    },
+    {
+        "tag_id": "186",
+        "tag_name": "Hentai"
+    },
+    {
+        "tag_id": "187",
+        "tag_name": "Hero Shooter"
+    },
+    {
+        "tag_id": "188",
+        "tag_name": "Hex Grid"
+    },
+    {
+        "tag_id": "189",
+        "tag_name": "Hidden Object"
+    },
+    {
+        "tag_id": "190",
+        "tag_name": "Historical"
+    },
+    {
+        "tag_id": "191",
+        "tag_name": "Hobby Sim"
+    },
+    {
+        "tag_id": "192",
+        "tag_name": "Hockey"
+    },
+    {
+        "tag_id": "193",
+        "tag_name": "Horror"
+    },
+    {
+        "tag_id": "194",
+        "tag_name": "Horses"
+    },
+    {
+        "tag_id": "195",
+        "tag_name": "Hunting"
+    },
+    {
+        "tag_id": "196",
+        "tag_name": "Idler"
+    },
+    {
+        "tag_id": "197",
+        "tag_name": "Illuminati"
+    },
+    {
+        "tag_id": "198",
+        "tag_name": "Immersive"
+    },
+    {
+        "tag_id": "199",
+        "tag_name": "Immersive Sim"
+    },
+    {
+        "tag_id": "200",
+        "tag_name": "Indie"
+    },
+    {
+        "tag_id": "201",
+        "tag_name": "Instrumental Music"
+    },
+    {
+        "tag_id": "202",
+        "tag_name": "Intentionally Awkward Controls"
+    },
+    {
+        "tag_id": "203",
+        "tag_name": "Interactive Fiction"
+    },
+    {
+        "tag_id": "204",
+        "tag_name": "Inventory Management"
+    },
+    {
+        "tag_id": "205",
+        "tag_name": "Investigation"
+    },
+    {
+        "tag_id": "206",
+        "tag_name": "Isometric"
+    },
+    {
+        "tag_id": "207",
+        "tag_name": "JRPG"
+    },
+    {
+        "tag_id": "208",
+        "tag_name": "Jet"
+    },
+    {
+        "tag_id": "209",
+        "tag_name": "Job Simulator"
+    },
+    {
+        "tag_id": "210",
+        "tag_name": "Jump Scare"
+    },
+    {
+        "tag_id": "211",
+        "tag_name": "Kickstarter"
+    },
+    {
+        "tag_id": "212",
+        "tag_name": "LEGO"
+    },
+    {
+        "tag_id": "213",
+        "tag_name": "LGBTQ+"
+    },
+    {
+        "tag_id": "214",
+        "tag_name": "Lara Croft"
+    },
+    {
+        "tag_id": "215",
+        "tag_name": "Lemmings"
+    },
+    {
+        "tag_id": "216",
+        "tag_name": "Level Editor"
+    },
+    {
+        "tag_id": "217",
+        "tag_name": "Life Sim"
+    },
+    {
+        "tag_id": "218",
+        "tag_name": "Linear"
+    },
+    {
+        "tag_id": "219",
+        "tag_name": "Local Co-Op"
+    },
+    {
+        "tag_id": "220",
+        "tag_name": "Local Multiplayer"
+    },
+    {
+        "tag_id": "221",
+        "tag_name": "Logic"
+    },
+    {
+        "tag_id": "222",
+        "tag_name": "Loot"
+    },
+    {
+        "tag_id": "223",
+        "tag_name": "Looter Shooter"
+    },
+    {
+        "tag_id": "224",
+        "tag_name": "Lore-Rich"
+    },
+    {
+        "tag_id": "225",
+        "tag_name": "Lovecraftian"
+    },
+    {
+        "tag_id": "226",
+        "tag_name": "MMORPG"
+    },
+    {
+        "tag_id": "227",
+        "tag_name": "MOBA"
+    },
+    {
+        "tag_id": "228",
+        "tag_name": "Magic"
+    },
+    {
+        "tag_id": "229",
+        "tag_name": "Mahjong"
+    },
+    {
+        "tag_id": "230",
+        "tag_name": "Management"
+    },
+    {
+        "tag_id": "231",
+        "tag_name": "Mars"
+    },
+    {
+        "tag_id": "232",
+        "tag_name": "Martial Arts"
+    },
+    {
+        "tag_id": "233",
+        "tag_name": "Massively Multiplayer"
+    },
+    {
+        "tag_id": "234",
+        "tag_name": "Masterpiece"
+    },
+    {
+        "tag_id": "235",
+        "tag_name": "Match 3"
+    },
+    {
+        "tag_id": "236",
+        "tag_name": "Mature"
+    },
+    {
+        "tag_id": "237",
+        "tag_name": "Mechs"
+    },
+    {
+        "tag_id": "238",
+        "tag_name": "Medical Sim"
+    },
+    {
+        "tag_id": "239",
+        "tag_name": "Medieval"
+    },
+    {
+        "tag_id": "240",
+        "tag_name": "Memes"
+    },
+    {
+        "tag_id": "241",
+        "tag_name": "Metroidvania"
+    },
+    {
+        "tag_id": "242",
+        "tag_name": "Military"
+    },
+    {
+        "tag_id": "243",
+        "tag_name": "Mini Golf"
+    },
+    {
+        "tag_id": "244",
+        "tag_name": "Minigames"
+    },
+    {
+        "tag_id": "245",
+        "tag_name": "Minimalist"
+    },
+    {
+        "tag_id": "246",
+        "tag_name": "Mining"
+    },
+    {
+        "tag_id": "247",
+        "tag_name": "Mod"
+    },
+    {
+        "tag_id": "248",
+        "tag_name": "Moddable"
+    },
+    {
+        "tag_id": "249",
+        "tag_name": "Modern"
+    },
+    {
+        "tag_id": "250",
+        "tag_name": "Motocross"
+    },
+    {
+        "tag_id": "251",
+        "tag_name": "Motorbike"
+    },
+    {
+        "tag_id": "252",
+        "tag_name": "Mouse only"
+    },
+    {
+        "tag_id": "253",
+        "tag_name": "Movie"
+    },
+    {
+        "tag_id": "254",
+        "tag_name": "Multiplayer"
+    },
+    {
+        "tag_id": "255",
+        "tag_name": "Multiple Endings"
+    },
+    {
+        "tag_id": "256",
+        "tag_name": "Music"
+    },
+    {
+        "tag_id": "257",
+        "tag_name": "Music-Based Procedural Generation"
+    },
+    {
+        "tag_id": "258",
+        "tag_name": "Musou"
+    },
+    {
+        "tag_id": "259",
+        "tag_name": "Mystery"
+    },
+    {
+        "tag_id": "260",
+        "tag_name": "Mystery Dungeon"
+    },
+    {
+        "tag_id": "261",
+        "tag_name": "Mythology"
+    },
+    {
+        "tag_id": "262",
+        "tag_name": "NSFW"
+    },
+    {
+        "tag_id": "263",
+        "tag_name": "Narration"
+    },
+    {
+        "tag_id": "264",
+        "tag_name": "Narrative"
+    },
+    {
+        "tag_id": "265",
+        "tag_name": "Nature"
+    },
+    {
+        "tag_id": "266",
+        "tag_name": "Naval"
+    },
+    {
+        "tag_id": "267",
+        "tag_name": "Naval Combat"
+    },
+    {
+        "tag_id": "268",
+        "tag_name": "Ninja"
+    },
+    {
+        "tag_id": "269",
+        "tag_name": "Noir"
+    },
+    {
+        "tag_id": "270",
+        "tag_name": "Nonlinear"
+    },
+    {
+        "tag_id": "271",
+        "tag_name": "Nostalgia"
+    },
+    {
+        "tag_id": "272",
+        "tag_name": "Nudity"
+    },
+    {
+        "tag_id": "273",
+        "tag_name": "Offroad"
+    },
+    {
+        "tag_id": "274",
+        "tag_name": "Old School"
+    },
+    {
+        "tag_id": "275",
+        "tag_name": "On-Rails Shooter"
+    },
+    {
+        "tag_id": "276",
+        "tag_name": "Online Co-Op"
+    },
+    {
+        "tag_id": "277",
+        "tag_name": "Open World"
+    },
+    {
+        "tag_id": "278",
+        "tag_name": "Open World Survival Craft"
+    },
+    {
+        "tag_id": "279",
+        "tag_name": "Otome"
+    },
+    {
+        "tag_id": "280",
+        "tag_name": "Outbreak Sim"
+    },
+    {
+        "tag_id": "281",
+        "tag_name": "Parkour"
+    },
+    {
+        "tag_id": "282",
+        "tag_name": "Parody "
+    },
+    {
+        "tag_id": "283",
+        "tag_name": "Party"
+    },
+    {
+        "tag_id": "284",
+        "tag_name": "Party Game"
+    },
+    {
+        "tag_id": "285",
+        "tag_name": "Party-Based RPG"
+    },
+    {
+        "tag_id": "286",
+        "tag_name": "Perma Death"
+    },
+    {
+        "tag_id": "287",
+        "tag_name": "Philosophical"
+    },
+    {
+        "tag_id": "288",
+        "tag_name": "Photo Editing"
+    },
+    {
+        "tag_id": "289",
+        "tag_name": "Physics"
+    },
+    {
+        "tag_id": "290",
+        "tag_name": "Pinball"
+    },
+    {
+        "tag_id": "291",
+        "tag_name": "Pirates"
+    },
+    {
+        "tag_id": "292",
+        "tag_name": "Pixel Graphics"
+    },
+    {
+        "tag_id": "293",
+        "tag_name": "Platformer"
+    },
+    {
+        "tag_id": "294",
+        "tag_name": "Point & Click"
+    },
+    {
+        "tag_id": "295",
+        "tag_name": "Political"
+    },
+    {
+        "tag_id": "296",
+        "tag_name": "Political Sim"
+    },
+    {
+        "tag_id": "297",
+        "tag_name": "Politics"
+    },
+    {
+        "tag_id": "298",
+        "tag_name": "Pool"
+    },
+    {
+        "tag_id": "299",
+        "tag_name": "Post-apocalyptic"
+    },
+    {
+        "tag_id": "300",
+        "tag_name": "Precision Platformer"
+    },
+    {
+        "tag_id": "301",
+        "tag_name": "Procedural Generation"
+    },
+    {
+        "tag_id": "302",
+        "tag_name": "Programming"
+    },
+    {
+        "tag_id": "303",
+        "tag_name": "Psychedelic"
+    },
+    {
+        "tag_id": "304",
+        "tag_name": "Psychological"
+    },
+    {
+        "tag_id": "305",
+        "tag_name": "Psychological Horror"
+    },
+    {
+        "tag_id": "306",
+        "tag_name": "Puzzle"
+    },
+    {
+        "tag_id": "307",
+        "tag_name": "Puzzle-Platformer"
+    },
+    {
+        "tag_id": "308",
+        "tag_name": "PvE"
+    },
+    {
+        "tag_id": "309",
+        "tag_name": "PvP"
+    },
+    {
+        "tag_id": "310",
+        "tag_name": "Quick-Time Events"
+    },
+    {
+        "tag_id": "311",
+        "tag_name": "RPG"
+    },
+    {
+        "tag_id": "312",
+        "tag_name": "RPGMaker"
+    },
+    {
+        "tag_id": "313",
+        "tag_name": "RTS"
+    },
+    {
+        "tag_id": "314",
+        "tag_name": "Racing"
+    },
+    {
+        "tag_id": "315",
+        "tag_name": "Real Time Tactics"
+    },
+    {
+        "tag_id": "316",
+        "tag_name": "Real-Time"
+    },
+    {
+        "tag_id": "317",
+        "tag_name": "Real-Time with Pause"
+    },
+    {
+        "tag_id": "318",
+        "tag_name": "Realistic"
+    },
+    {
+        "tag_id": "319",
+        "tag_name": "Reboot"
+    },
+    {
+        "tag_id": "320",
+        "tag_name": "Relaxing"
+    },
+    {
+        "tag_id": "321",
+        "tag_name": "Remake"
+    },
+    {
+        "tag_id": "322",
+        "tag_name": "Replay Value"
+    },
+    {
+        "tag_id": "323",
+        "tag_name": "Resource Management"
+    },
+    {
+        "tag_id": "324",
+        "tag_name": "Retro"
+    },
+    {
+        "tag_id": "325",
+        "tag_name": "Rhythm"
+    },
+    {
+        "tag_id": "326",
+        "tag_name": "Robots"
+    },
+    {
+        "tag_id": "327",
+        "tag_name": "Rock Music"
+    },
+    {
+        "tag_id": "328",
+        "tag_name": "Rogue-like"
+    },
+    {
+        "tag_id": "329",
+        "tag_name": "Rogue-lite"
+    },
+    {
+        "tag_id": "330",
+        "tag_name": "Roguelike Deckbuilder"
+    },
+    {
+        "tag_id": "331",
+        "tag_name": "Roguevania"
+    },
+    {
+        "tag_id": "332",
+        "tag_name": "Romance"
+    },
+    {
+        "tag_id": "333",
+        "tag_name": "Rome"
+    },
+    {
+        "tag_id": "334",
+        "tag_name": "Rugby"
+    },
+    {
+        "tag_id": "335",
+        "tag_name": "Runner"
+    },
+    {
+        "tag_id": "336",
+        "tag_name": "Sailing"
+    },
+    {
+        "tag_id": "337",
+        "tag_name": "Sandbox"
+    },
+    {
+        "tag_id": "338",
+        "tag_name": "Satire"
+    },
+    {
+        "tag_id": "339",
+        "tag_name": "Sci-fi"
+    },
+    {
+        "tag_id": "340",
+        "tag_name": "Science"
+    },
+    {
+        "tag_id": "341",
+        "tag_name": "Score Attack"
+    },
+    {
+        "tag_id": "342",
+        "tag_name": "Sequel"
+    },
+    {
+        "tag_id": "343",
+        "tag_name": "Sexual Content"
+    },
+    {
+        "tag_id": "344",
+        "tag_name": "Shoot 'Em Up"
+    },
+    {
+        "tag_id": "345",
+        "tag_name": "Shooter"
+    },
+    {
+        "tag_id": "346",
+        "tag_name": "Shop Keeper"
+    },
+    {
+        "tag_id": "347",
+        "tag_name": "Short"
+    },
+    {
+        "tag_id": "348",
+        "tag_name": "Side Scroller"
+    },
+    {
+        "tag_id": "349",
+        "tag_name": "Silent Protagonist"
+    },
+    {
+        "tag_id": "350",
+        "tag_name": "Simulation"
+    },
+    {
+        "tag_id": "351",
+        "tag_name": "Singleplayer"
+    },
+    {
+        "tag_id": "352",
+        "tag_name": "Skateboarding"
+    },
+    {
+        "tag_id": "353",
+        "tag_name": "Skating"
+    },
+    {
+        "tag_id": "354",
+        "tag_name": "Skiing"
+    },
+    {
+        "tag_id": "355",
+        "tag_name": "Sniper"
+    },
+    {
+        "tag_id": "356",
+        "tag_name": "Snooker"
+    },
+    {
+        "tag_id": "357",
+        "tag_name": "Snow"
+    },
+    {
+        "tag_id": "358",
+        "tag_name": "Snowboarding"
+    },
+    {
+        "tag_id": "359",
+        "tag_name": "Soccer"
+    },
+    {
+        "tag_id": "360",
+        "tag_name": "Social Deduction"
+    },
+    {
+        "tag_id": "361",
+        "tag_name": "Software"
+    },
+    {
+        "tag_id": "362",
+        "tag_name": "Software Training"
+    },
+    {
+        "tag_id": "363",
+        "tag_name": "Sokoban"
+    },
+    {
+        "tag_id": "364",
+        "tag_name": "Solitaire"
+    },
+    {
+        "tag_id": "365",
+        "tag_name": "Souls-like"
+    },
+    {
+        "tag_id": "366",
+        "tag_name": "Soundtrack"
+    },
+    {
+        "tag_id": "367",
+        "tag_name": "Space"
+    },
+    {
+        "tag_id": "368",
+        "tag_name": "Space Sim"
+    },
+    {
+        "tag_id": "369",
+        "tag_name": "Spaceships"
+    },
+    {
+        "tag_id": "370",
+        "tag_name": "Spectacle fighter"
+    },
+    {
+        "tag_id": "371",
+        "tag_name": "Spelling"
+    },
+    {
+        "tag_id": "372",
+        "tag_name": "Split Screen"
+    },
+    {
+        "tag_id": "373",
+        "tag_name": "Sports"
+    },
+    {
+        "tag_id": "374",
+        "tag_name": "Stealth"
+    },
+    {
+        "tag_id": "375",
+        "tag_name": "Steam Machine"
+    },
+    {
+        "tag_id": "376",
+        "tag_name": "Steampunk"
+    },
+    {
+        "tag_id": "377",
+        "tag_name": "Story Rich"
+    },
+    {
+        "tag_id": "378",
+        "tag_name": "Strategy"
+    },
+    {
+        "tag_id": "379",
+        "tag_name": "Strategy RPG"
+    },
+    {
+        "tag_id": "380",
+        "tag_name": "Stylized"
+    },
+    {
+        "tag_id": "381",
+        "tag_name": "Submarine"
+    },
+    {
+        "tag_id": "382",
+        "tag_name": "Superhero"
+    },
+    {
+        "tag_id": "383",
+        "tag_name": "Supernatural"
+    },
+    {
+        "tag_id": "384",
+        "tag_name": "Surreal"
+    },
+    {
+        "tag_id": "385",
+        "tag_name": "Survival"
+    },
+    {
+        "tag_id": "386",
+        "tag_name": "Survival Horror"
+    },
+    {
+        "tag_id": "387",
+        "tag_name": "Swordplay"
+    },
+    {
+        "tag_id": "388",
+        "tag_name": "Tabletop"
+    },
+    {
+        "tag_id": "389",
+        "tag_name": "Tactical"
+    },
+    {
+        "tag_id": "390",
+        "tag_name": "Tactical RPG"
+    },
+    {
+        "tag_id": "391",
+        "tag_name": "Tanks"
+    },
+    {
+        "tag_id": "392",
+        "tag_name": "Team-Based"
+    },
+    {
+        "tag_id": "393",
+        "tag_name": "Tennis"
+    },
+    {
+        "tag_id": "394",
+        "tag_name": "Text-Based"
+    },
+    {
+        "tag_id": "395",
+        "tag_name": "Third Person"
+    },
+    {
+        "tag_id": "396",
+        "tag_name": "Third-Person Shooter"
+    },
+    {
+        "tag_id": "397",
+        "tag_name": "Thriller"
+    },
+    {
+        "tag_id": "398",
+        "tag_name": "Tile-Matching"
+    },
+    {
+        "tag_id": "399",
+        "tag_name": "Time Attack"
+    },
+    {
+        "tag_id": "400",
+        "tag_name": "Time Management"
+    },
+    {
+        "tag_id": "401",
+        "tag_name": "Time Manipulation"
+    },
+    {
+        "tag_id": "402",
+        "tag_name": "Time Travel"
+    },
+    {
+        "tag_id": "403",
+        "tag_name": "Top-Down"
+    },
+    {
+        "tag_id": "404",
+        "tag_name": "Top-Down Shooter"
+    },
+    {
+        "tag_id": "405",
+        "tag_name": "Touch-Friendly"
+    },
+    {
+        "tag_id": "406",
+        "tag_name": "Tower Defense"
+    },
+    {
+        "tag_id": "407",
+        "tag_name": "TrackIR"
+    },
+    {
+        "tag_id": "408",
+        "tag_name": "Trading"
+    },
+    {
+        "tag_id": "409",
+        "tag_name": "Trading Card Game"
+    },
+    {
+        "tag_id": "410",
+        "tag_name": "Traditional Roguelike"
+    },
+    {
+        "tag_id": "411",
+        "tag_name": "Trains"
+    },
+    {
+        "tag_id": "412",
+        "tag_name": "Transhumanism"
+    },
+    {
+        "tag_id": "413",
+        "tag_name": "Transportation"
+    },
+    {
+        "tag_id": "414",
+        "tag_name": "Trivia"
+    },
+    {
+        "tag_id": "415",
+        "tag_name": "Turn-Based"
+    },
+    {
+        "tag_id": "416",
+        "tag_name": "Turn-Based Combat"
+    },
+    {
+        "tag_id": "417",
+        "tag_name": "Turn-Based Strategy"
+    },
+    {
+        "tag_id": "418",
+        "tag_name": "Turn-Based Tactics"
+    },
+    {
+        "tag_id": "419",
+        "tag_name": "Tutorial"
+    },
+    {
+        "tag_id": "420",
+        "tag_name": "Twin Stick Shooter"
+    },
+    {
+        "tag_id": "421",
+        "tag_name": "Typing"
+    },
+    {
+        "tag_id": "422",
+        "tag_name": "Underground"
+    },
+    {
+        "tag_id": "423",
+        "tag_name": "Underwater"
+    },
+    {
+        "tag_id": "424",
+        "tag_name": "Unforgiving"
+    },
+    {
+        "tag_id": "425",
+        "tag_name": "Utilities"
+    },
+    {
+        "tag_id": "426",
+        "tag_name": "VR"
+    },
+    {
+        "tag_id": "427",
+        "tag_name": "VR Only"
+    },
+    {
+        "tag_id": "428",
+        "tag_name": "Vampire"
+    },
+    {
+        "tag_id": "429",
+        "tag_name": "Vehicular Combat"
+    },
+    {
+        "tag_id": "430",
+        "tag_name": "Video Production"
+    },
+    {
+        "tag_id": "431",
+        "tag_name": "Vikings"
+    },
+    {
+        "tag_id": "432",
+        "tag_name": "Villain Protagonist"
+    },
+    {
+        "tag_id": "433",
+        "tag_name": "Violent"
+    },
+    {
+        "tag_id": "434",
+        "tag_name": "Visual Novel"
+    },
+    {
+        "tag_id": "435",
+        "tag_name": "Voice Control"
+    },
+    {
+        "tag_id": "436",
+        "tag_name": "Volleyball"
+    },
+    {
+        "tag_id": "437",
+        "tag_name": "Voxel"
+    },
+    {
+        "tag_id": "438",
+        "tag_name": "Walking Simulator"
+    },
+    {
+        "tag_id": "439",
+        "tag_name": "War"
+    },
+    {
+        "tag_id": "440",
+        "tag_name": "Wargame"
+    },
+    {
+        "tag_id": "441",
+        "tag_name": "Warhammer 40K"
+    },
+    {
+        "tag_id": "442",
+        "tag_name": "Web Publishing"
+    },
+    {
+        "tag_id": "443",
+        "tag_name": "Well-Written"
+    },
+    {
+        "tag_id": "444",
+        "tag_name": "Werewolves"
+    },
+    {
+        "tag_id": "445",
+        "tag_name": "Western"
+    },
+    {
+        "tag_id": "446",
+        "tag_name": "Wholesome"
+    },
+    {
+        "tag_id": "447",
+        "tag_name": "Word Game"
+    },
+    {
+        "tag_id": "448",
+        "tag_name": "World War I"
+    },
+    {
+        "tag_id": "449",
+        "tag_name": "World War II"
+    },
+    {
+        "tag_id": "450",
+        "tag_name": "Wrestling"
+    },
+    {
+        "tag_id": "451",
+        "tag_name": "Zombies"
+    },
+    {
+        "tag_id": "452",
+        "tag_name": "e-sports"
+    }
+]

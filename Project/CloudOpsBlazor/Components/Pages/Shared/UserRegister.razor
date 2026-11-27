@@ -1,0 +1,161 @@
+﻿@using CloudOpsBlazor.Services
+@inject AuthService Auth
+
+@if (IsVisible)
+{
+    <div class="register-page">
+
+        <div class="register-window">
+
+            <div class="window-header">
+                <div class="window-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+
+                <span class="window-title">CLOUDOPS / REGISTRATION</span>
+
+                <button class="close-button" @onclick="CloseRegister">
+                    ×
+                </button>
+            </div>
+
+            <div class="register-content">
+
+                <div class="register-logo">
+                    <span>CO</span>
+                </div>
+
+                <h2>Create account</h2>
+                <p class="subtitle">
+                    Join CloudOps and start your gaming journey.
+                </p>
+
+                <div class="input-group">
+                    <label>Display Name</label>
+                    <input @bind="displayName"
+                           type="text"
+                           placeholder="Your username" />
+                </div>
+
+                <div class="input-group">
+                    <label>Email address</label>
+                    <input @bind="email"
+                           type="email"
+                           placeholder="name@company.com" />
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input @bind="password"
+                           type="password"
+                           placeholder="Create a password" />
+                </div>
+
+                <div class="password-info">
+                    <span>PASSWORD REQUIREMENTS</span>
+                    <ul>
+                        <li>At least 8 characters</li>
+                        <li>One uppercase and lowercase letter</li>
+                        <li>At least one number</li>
+                        <li>At least one special character</li>
+                    </ul>
+                </div>
+
+                <button class="register-button"
+                        @onclick="Register"
+                        disabled="@isLoading">
+
+                    @(isLoading ? "Creating account..." : "Create account")
+
+                    @if (!isLoading)
+                    {
+                        <span class="button-arrow">→</span>
+                    }
+                </button>
+
+                @if (!string.IsNullOrEmpty(message))
+                {
+                    <div class="register-message">
+                        @message
+                    </div>
+                }
+
+                <div class="register-footer">
+                    <span>SECURE REGISTRATION</span>
+                    <span>© 2026 CLOUDOPS</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+}
+
+@code {
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private string displayName = "";
+    private string email = "";
+    private string password = "";
+    private string message = "";
+
+    private bool isLoading = false;
+
+    private async Task Register()
+    {
+        if (isLoading)
+            return;
+
+        string check = CheckStrength();
+
+        if (check != "Password accepted")
+        {
+            message = check;
+            return;
+        }
+
+        isLoading = true;
+        message = "";
+
+        try
+        {
+            message = await Auth.Register(email, password, displayName);
+        }
+        catch
+        {
+            message = "Something went wrong. Please try again.";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private string CheckStrength()
+    {
+        if (password.Length < 8)
+            return "Weak: At least 8 characters required.";
+
+        if (!password.Any(char.IsUpper))
+            return "Weak: Add an uppercase letter.";
+
+        if (!password.Any(char.IsLower))
+            return "Weak: Add a lowercase letter.";
+
+        if (!password.Any(char.IsDigit))
+            return "Weak: Add a number.";
+
+        if (!password.Any(c => !char.IsLetterOrDigit(c)))
+            return "Weak: Add a special character.";
+
+        return "Password accepted";
+    }
+
+    private async Task CloseRegister()
+    {
+        await OnClose.InvokeAsync();
+    }
+}
