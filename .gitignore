@@ -1,8 +1,4 @@
 .env
-
-# Visual Studio
 .vs/
-
-# Build output
-**/bin/
-**/obj/
+[Oo]bj/
+[Bb]in/
