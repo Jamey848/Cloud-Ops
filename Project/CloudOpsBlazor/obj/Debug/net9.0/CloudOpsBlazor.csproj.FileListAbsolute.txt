@@ -197,5 +197,6 @@ C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Pro
 C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\CloudOpsBlazor\obj\Debug\net9.0\scopedcss\Components\Pages\Shared\UserLogin.razor.rz.scp.css
 C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\CloudOpsBlazor\obj\Debug\net9.0\scopedcss\Components\Pages\Shared\UserRegister.razor.rz.scp.css
 C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\CloudOpsBlazor\obj\Debug\net9.0\scopedcss\Components\Pages\Account.razor.rz.scp.css
-C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\CloudOpsBlazor\obj\Debug\net9.0\compressed\tk5okqrlqt-kmtqbq03vg.gz
-C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\CloudOpsBlazor\obj\Debug\net9.0\compressed\h28qb6ib69-kmtqbq03vg.gz
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\CloudOpsBlazor\obj\Debug\net9.0\scopedcss\Components\Pages\Shared\AppendUserSetting.razor.rz.scp.css
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\CloudOpsBlazor\obj\Debug\net9.0\compressed\tk5okqrlqt-mi6muutkrr.gz
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\CloudOpsBlazor\obj\Debug\net9.0\compressed\h28qb6ib69-mi6muutkrr.gz

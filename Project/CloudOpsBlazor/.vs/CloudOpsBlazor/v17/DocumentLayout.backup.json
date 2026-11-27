@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\components\\pages\\shared\\appendusersetting.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\shared\\appendusersetting.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|c:\\users\\jamey\\vakken jaar 3\\semester 1\\cloud \u0026 ops\\fixed cloud \u0026 ops github\\project\\cloudopsblazor\\components\\pages\\shared\\appendusersetting.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F819F715-5DDC-4E2B-9AB8-247676DAC02F}|CloudOpsBlazor.csproj|solutionrelative:components\\pages\\shared\\appendusersetting.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -159,6 +163,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppendUserSetting.razor.css",
+              "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\AppendUserSetting.razor.css",
+              "RelativeDocumentMoniker": "Components\\Pages\\Shared\\AppendUserSetting.razor.css",
+              "ToolTip": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\AppendUserSetting.razor.css",
+              "RelativeToolTip": "Components\\Pages\\Shared\\AppendUserSetting.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-22T15:59:35.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AppendUserSetting.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\AppendUserSetting.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\AppendUserSetting.razor",
@@ -171,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GameMetadata.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\GameMetadata.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\GameMetadata.cs",
@@ -184,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UserRegister.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\UserRegister.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\UserRegister.razor",
@@ -197,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
@@ -210,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UserLogin.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\UserLogin.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\UserLogin.razor",
@@ -223,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -236,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
@@ -249,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -262,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Account.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Account.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Account.razor",
@@ -275,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\AppUser.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\AppUser.cs",
@@ -288,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UserLogin.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\UserLogin.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\UserLogin.razor.css",
@@ -300,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UserRegister.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\UserRegister.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\UserRegister.razor.css",
@@ -312,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Account.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Account.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Account.razor.css",
@@ -324,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "GameDetails.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameDetails.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameDetails.razor",
@@ -336,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Explorer.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Explorer.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Explorer.razor",
@@ -348,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "GameCard.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Shared\\GameCard.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Shared\\GameCard.razor",
@@ -360,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -372,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -384,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "categories.json",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\wwwroot\\Data\\categories.json",
               "RelativeDocumentMoniker": "wwwroot\\Data\\categories.json",
@@ -396,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "MaxPrice.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\Metadata\\MaxPrice.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\Metadata\\MaxPrice.cs",
@@ -408,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "game_card.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Objects\\game_card.cs",
               "RelativeDocumentMoniker": "Objects\\game_card.cs",
@@ -420,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Tag.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\Metadata\\Tag.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\Metadata\\Tag.cs",
@@ -432,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\Metadata\\Category.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\Metadata\\Category.cs",
@@ -444,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Genre.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\Metadata\\Genre.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\Metadata\\Genre.cs",
@@ -456,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Expl_FilterRequest.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\Expl_FilterRequest.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\Expl_FilterRequest.cs",
@@ -468,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Explorer.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Explorer.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Explorer.razor.css",
@@ -480,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "wwwroot\\app.css",
@@ -492,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "GamePrice.razor.css",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Components\\Gamedetails_comp\\GamePrice.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Components\\Gamedetails_comp\\GamePrice.razor.css",
@@ -504,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "GamePrice.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Components\\Gamedetails_comp\\GamePrice.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Components\\Gamedetails_comp\\GamePrice.razor",
@@ -516,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "GamePopularity.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Components\\Gamedetails_comp\\GamePopularity.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Components\\Gamedetails_comp\\GamePopularity.razor",
@@ -528,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Game_price.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\Game_price.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\Game_price.cs",
@@ -540,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Game_popularity.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\Game_popularity.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\Game_popularity.cs",
@@ -552,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "DetailedGameDto.cs",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\DTO\u0027s\\DetailedGameDto.cs",
               "RelativeDocumentMoniker": "Components\\DTO\u0027s\\DetailedGameDto.cs",
@@ -564,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "GameScreenshots.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Components\\Gamedetails_comp\\GameScreenshots.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Components\\Gamedetails_comp\\GameScreenshots.razor",
@@ -576,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "GameStatistics.razor",
               "DocumentMoniker": "C:\\Users\\jamey\\Vakken jaar 3\\Semester 1\\Cloud \u0026 Ops\\Fixed Cloud \u0026 Ops Github\\Project\\CloudOpsBlazor\\Components\\Pages\\Components\\Gamedetails_comp\\GameStatistics.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Components\\Gamedetails_comp\\GameStatistics.razor",
