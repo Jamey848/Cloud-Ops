@@ -324,3 +324,11 @@ C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Pro
 C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\obj\Debug\net8.0\Recommendation_engine.pdb
 C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\obj\Debug\net8.0\Recommendation_engine.genruntimeconfig.cache
 C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\obj\Debug\net8.0\ref\Recommendation_engine.dll
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jamey\Vakken jaar 3\Semester 1\Cloud & Ops\Fixed Cloud & Ops Github\Project\blazor_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

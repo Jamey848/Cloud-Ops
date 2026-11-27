@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Npgsql;
 using Recommendation_engine;
 using Recommendations_engine;
+using System.Linq;
 
 namespace Recommendations_engine
 {
@@ -80,6 +81,7 @@ namespace Recommendations_engine
         {
             var game = await _context.Games
             .AsNoTracking()
+            .AsSplitQuery()
             .Include(g => g.GameGenres)
                 .ThenInclude(gg => gg.Linked_genre)
             .Include(g => g.GameTags)
@@ -94,9 +96,11 @@ namespace Recommendations_engine
             if (game == null)
                 return NotFound();
 
-            var dto = new DetailedGameDto
+            var dto = await _context.Games
+            .AsNoTracking()
+            .Where(g => g.Appid == appId)
+            .Select(game => new DetailedGameDto
             {
-                // Basic information
                 AppId = game.Appid,
                 Name = game.Name,
                 ReleaseDate = game.Release_date,
@@ -105,12 +109,10 @@ namespace Recommendations_engine
                 ShortDescription = game.Description,
                 HeaderImage = game.Header_image,
 
-                // Platform support
                 Windows = game.Windows,
                 Mac = game.Mac,
                 Linux = game.Linux,
 
-                // Additional information
                 Achievements = game.Achievements,
                 Recommendations = game.Recommendations,
                 Notes = game.Notes,
@@ -118,29 +120,25 @@ namespace Recommendations_engine
                 Publishers = game.Publishers,
                 CompositeScore = game.Score,
 
-                // Genres
                 Genres = game.GameGenres
-                .Where(x => x.Linked_genre != null)
-                .Select(x => x.Linked_genre.GenreName!)
-                .ToList(),
+                    .Where(x => x.Linked_genre != null)
+                    .Select(x => x.Linked_genre.GenreName!)
+                    .ToList(),
 
-                // Tags
                 Tags = game.GameTags
-                .Where(x => x.Linked_tag != null)
-                .Select(x => x.Linked_tag.TagName!)
-                .ToList(),
+                    .Where(x => x.Linked_tag != null)
+                    .Select(x => x.Linked_tag.TagName!)
+                    .ToList(),
 
-                // Categories
                 Categories = game.GameCategories
-                .Where(x => x.Linked_category != null)
-                .Select(x => x.Linked_category.CategorieName!)
-                .ToList(),
+                    .Where(x => x.Linked_category != null)
+                    .Select(x => x.Linked_category.CategorieName!)
+                    .ToList(),
 
-                // Screenshots
                 Screenshots = game.Screenshots
-                .Where(x => x.ScreenshotUrl != null)
-                .Select(x => x.ScreenshotUrl!)
-                .ToList(),
+                    .Where(x => x.ScreenshotUrl != null)
+                    .Select(x => x.ScreenshotUrl!)
+                    .ToList(),
 
                 PopDTO = game.Popularity == null ? null : new Game_popularity
                 {
@@ -151,23 +149,94 @@ namespace Recommendations_engine
                     Summary = game.Popularity.ReviewsSummary
                 },
 
-                PriceDTO = game.Price == null ? null: new Game_price
+                PriceDTO = game.Price == null ? null : new Game_price
                 {
                     InitialPrice = game.Price.InitialPrice,
                     FinalPrice = game.Price.FinalPrice,
                     Discount = game.Price.Discount,
                     UpdatedAt = game.Price.UpdatedAt
                 }
-
-                // Popularity
-                /*Popularity = game.Popularity,
-
-                // Price
-                Prices = game.Price*/
-            };
+            })
+            .FirstOrDefaultAsync();
 
             return Ok(dto);
         }
 
+        [HttpPost("Filter")]
+        public async Task<IActionResult> GetMetadata(
+        [FromBody] Expl_FilterRequest request)
+        {
+            var query = _context.Games
+                .AsNoTracking()
+                .AsQueryable();
+
+            // Search by name
+            if (!string.IsNullOrWhiteSpace(request.Searchname))
+            {
+                query = query.Where(g =>
+                    g.Name.Contains(request.Searchname));
+            }
+
+            // Filter by AppID
+            if (request.AppID.HasValue)
+            {
+                query = query.Where(g =>
+                    g.Appid == request.AppID.Value);
+            }
+
+            // Filter by genres
+            if (request.GenreIds.Count > 0)
+            {
+                query = query.Where(g =>
+                    g.GameGenres.Any(gg =>
+                        gg.GenreId != null &&
+                        request.GenreIds.Contains(gg.GenreId)));
+            }
+
+            // Filter by categories
+            if (request.CategoryIds.Count > 0)
+            {
+                query = query.Where(g =>
+                    g.GameCategories.Any(gc =>
+                        gc.CategorieId != null &&
+                        request.CategoryIds.Contains(gc.CategorieId)));
+            }
+
+            // Filter by tags
+            if (request.TagIds.Count > 0)
+            {
+                query = query.Where(g =>
+                    g.GameTags.Any(gt =>
+                        gt.TagId.HasValue &&
+                        request.TagIds.Contains(gt.TagId.Value)));
+            }
+
+            // Filter by minimum price
+            if (request.MinPrice.HasValue)
+            {
+                query = query.Where(g =>
+                    g.Price != null &&
+                    g.Price.FinalPrice >= request.MinPrice.Value);
+            }
+
+            var games = await query
+                .Include(g => g.GameGenres)
+                .Include(g => g.GameTags)
+                .Include(g => g.GameCategories)
+                .Include(g => g.Popularity)
+                .Include(g => g.Price)
+                .AsSplitQuery()
+                .ToListAsync();
+
+            List<game_card> gc_list = games.Select(g => new game_card
+            {
+                Appid = g.Appid,
+                Name = g.Name,
+                Release_date = g.Release_date,
+                Header_image = g.Header_image
+            }).Take(1000).ToList();
+
+            return Ok(gc_list);
+        }
     }
 }

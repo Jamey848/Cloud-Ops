@@ -22,15 +22,20 @@ namespace Recommendations_engine
 
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
+            /*if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
+            }*/
+
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
+
+            app.MapGet("/", () => "Recommendations API is running!");
 
             app.Run();
         }

@@ -1,32 +1,26 @@
 
+
 # ==========================================
 # BUILD STAGE
 # ==========================================
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build 
-# Fetch offical sdk image. Basically the engine to:
-# build the application,
-# fetch nuget dependancies
-# compile c# code
-# and so on
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
-WORKDIR /src # Define working directory in the build container.
+WORKDIR /src
 
-COPY Recommendation_engine.csproj ./ 
-# Fetch the csproj file. Basically the DNA of your project:
-# Target .NET framework, NuGet packages, project configurations.
+# Copy project file
+COPY Recommendation_engine.csproj ./
 
-RUN dotnet restore "Recommendation_engine.csproj" 
-# Download all dependancies & NuGet packages. Makes it available for build.
+# Restore dependencies
+RUN dotnet restore Recommendation_engine.csproj
 
-COPY . . 
-# Copies all the application files from the host machine into the src working dir.
-# Hopefully dockerignore now filters out unecessary files like bin, git, etc.
+# Copy application source
+COPY . .
 
-RUN dotnet publish "Recommendation_engine.csproj" \     
-	-c Release \ 
-        -o /app/publish \ 
-        --no-restore # Skip depedanncy restoration
-
+# Publish application
+RUN dotnet publish Recommendation_engine.csproj \
+    -c Release \
+    -o /app/publish \
+    --no-restore
 
 # ==========================================
 # RUNTIME STAGE
@@ -41,5 +35,5 @@ COPY --from=build /app/publish .
 
 EXPOSE 8080
 
-ENTRYPOINT ["dotnet", "Recommendation_engine.dll"] # Just like with a car: all the work is done, but to get it moving
-# you have to put in the key and rev the engine. That's essentialy this.
+# Start the application
+ENTRYPOINT ["dotnet", "Recommendation_engine.dll"]

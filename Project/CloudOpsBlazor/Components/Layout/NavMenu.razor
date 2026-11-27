@@ -1,4 +1,6 @@
-﻿
+﻿@using CloudOpsBlazor.Services
+@inject AuthService Auth
+@implements IDisposable
 
 <div class="sidebar-menu">
 
@@ -26,7 +28,7 @@
                 <span class="nav-arrow">›</span>
             </NavLink>
 
-            <NavLink href="/discover" class="nav-item">
+            <NavLink href="/Explorer" class="nav-item">
                 <span class="nav-icon">◉</span>
                 <span class="nav-label">Discover</span>
                 <span class="nav-arrow">›</span>
@@ -46,6 +48,15 @@
                 <span class="nav-label">My Library</span>
                 <span class="nav-arrow">›</span>
             </NavLink>
+
+            @if (!string.IsNullOrEmpty(Auth.UserId))
+            {
+                <NavLink href="/Account" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    <span class="nav-label">My Account</span>
+                    <span class="nav-arrow">›</span>
+                </NavLink>
+            }
 
         </nav>
     </div>
@@ -68,6 +79,30 @@
     </div>
 
 </div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Auth.OnAuthStateChanged += UpdateUI;
+
+            await Auth.LoadUser();
+
+            StateHasChanged();
+        }
+    }
+
+    private void UpdateUI()
+    {
+        _ = InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        Auth.OnAuthStateChanged -= UpdateUI;
+    }
+}
 
 
 

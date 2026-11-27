@@ -1,0 +1,332 @@
+﻿@page "/Account"
+@using CloudOpsBlazor.Services
+@inject AuthService Auth
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+@inject HttpClient Http
+
+<p>@status</p>
+
+@if (isLoggedIn && currentuser != null)
+{
+    <div class="account-page">
+
+        <div class="account-container">
+
+            <!-- HEADER -->
+            <div class="account-heading">
+                <div>
+                    <span class="account-tag">CLOUDOPS / PLAYER PROFILE</span>
+                    <h1>Your Account</h1>
+                    <p>Your gaming identity and account management.</p>
+                </div>
+            </div>
+
+
+            <div class="account-layout">
+
+                <!-- LEFT SIDE: GAMING PROFILE -->
+                <main class="profile-main">
+
+                    <!-- PROFILE HERO -->
+                    <section class="profile-hero">
+
+                        <div class="profile-avatar">
+                            <span>CO</span>
+                        </div>
+
+                        <div class="profile-identity">
+                            <span class="section-tag">YOUR GAMING IDENTITY</span>
+                            <h2>@currentuser.ProfileName</h2>
+                        </div>
+
+                    </section>
+
+
+                    <!-- PROFILE DESCRIPTION -->
+                    <section class="account-card">
+
+                        <div class="card-heading">
+                            <h3>About Me</h3>
+                            <button class="icon-button" aria-label="Edit description"
+                                    @onclick='() => OpenEditModal("ProfileDescription")'>
+                                ✎
+                            </button>
+                        </div>
+
+                        <p class="profile-description">
+                            @currentuser.ProfileDescription
+                        </p>
+
+                    </section>
+
+
+                    <!-- GAMING SUMMARY -->
+                    <section class="account-card">
+
+                        <div class="card-heading">
+                            <div>
+                                <span class="section-tag">YOUR GAMING ACTIVITY</span>
+                                <h3>Gaming Overview</h3>
+                            </div>
+                        </div>
+
+                        <div class="stats-grid">
+
+                            <div class="stat-card">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">Favourite Games</span>
+                            </div>
+
+                            <div class="stat-card">
+                                <span class="stat-number">128</span>
+                                <span class="stat-label">Games Explored</span>
+                            </div>
+
+                            <div class="stat-card">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Genres Enjoyed</span>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!-- STEAM LIBRARY -->
+                    <section class="account-card steam-card">
+
+                        <div class="steam-heading">
+                            <div>
+                                <span class="section-tag">EXTERNAL INTEGRATION</span>
+                                <h3>Steam Library</h3>
+                                <p>Bring your Steam gaming library into CloudOps.</p>
+                            </div>
+
+                            <div class="steam-icon">S</div>
+                        </div>
+
+                        <div class="steam-connect">
+                            <div>
+                                <h4>Connect your Steam account</h4>
+                                <p>
+                                    Discover your library, recently played games
+                                    and gaming statistics.
+                                </p>
+                            </div>
+
+                            <button class="connect-button">
+                                Connect Steam →
+                            </button>
+                        </div>
+
+                    </section>
+
+                </main>
+
+
+                <!-- RIGHT SIDE: ACCOUNT DETAILS -->
+                <aside class="account-sidebar">
+
+                    <section class="account-card credentials-card">
+
+                        <div class="card-heading">
+                            <div>
+                                <span class="section-tag">PERSONAL DETAILS</span>
+                                <h3>Your Credentials</h3>
+                            </div>
+
+                            <button class="settings-button"
+                                    aria-label="Account settings">
+                                ⚙
+                            </button>
+                        </div>
+
+
+                        <!-- PROFILE NAME -->
+                        <div class="credential-item">
+                            <label>PROFILE NAME</label>
+
+                            <div class="credential-value">
+                                <span>@currentuser.ProfileName</span>
+
+                                <button class="edit-button"
+                                        aria-label="Edit profile name"
+                                        @onclick='() => OpenEditModal("ProfileName")'>
+                                    ✎
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="credential-item">
+                            <label>EMAIL ADDRESS</label>
+
+                            <div class="credential-value">
+                                <span>user@example.com</span>
+
+                                <button class="edit-button"
+                                        aria-label="Edit email"
+                                        @onclick='() => OpenEditModal("Email")'>
+                                    ✎
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!-- USER ID -->
+                        <div class="credential-item">
+                            <label>USER ID</label>
+
+                            <div class="credential-value">
+                                <span>USR-000001</span>
+                            </div>
+
+                            <span class="credential-hint">
+                                Your unique CloudOps identifier.
+                            </span>
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="credential-item">
+                            <label>PASSWORD</label>
+
+                            <div class="credential-value">
+                                <span>••••••••••••</span>
+
+                                <button class="edit-button"
+                                        aria-label="Change password"
+                                        @onclick='() => OpenEditModal("Password")'>
+                                    ✎
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!-- SETTINGS -->
+                        <div class="account-management">
+
+                            <span class="section-tag">ACCOUNT MANAGEMENT</span>
+
+                            <button class="management-button">
+                                <span>⚙</span>
+                                Account Settings
+                                <span class="management-arrow">→</span>
+                            </button>
+
+                            <button class="management-button danger">
+                                <span>⌫</span>
+                                Delete Account
+                                <span class="management-arrow">→</span>
+                            </button>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- ACCOUNT STATUS -->
+                    <section class="account-card status-card">
+
+                        <span class="section-tag">ACCOUNT STATUS</span>
+
+                        <div class="status-row">
+                            <span>Account</span>
+                            <span class="status-active">● Active</span>
+                        </div>
+
+                        <div class="status-row">
+                            <span>Steam</span>
+                            <span class="status-disconnected">Not connected</span>
+                        </div>
+
+                    </section>
+
+                </aside>
+
+            </div>
+
+            <footer class="account-footer">
+                CLOUDOPS ACCOUNT MANAGEMENT
+                <span>YOUR PROFILE. YOUR IDENTITY.</span>
+            </footer>
+
+        </div>
+
+    </div>
+}
+
+@code {
+    private string status = "Account component initialized...";
+    private bool isLoggedIn;
+
+    public AppUser currentuser;
+
+    private bool showEditModal = false;
+    private string editMode = "";
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine("ACCOUNT: OnInitialized executed!");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        if (!firstRender)
+        {
+            return;
+        }
+
+        try
+        {
+            status = "Loading user from protected storage...";
+            StateHasChanged();
+
+            isLoggedIn = await Auth.LoadUser();
+
+            if (!isLoggedIn)
+            {
+                status = "Not logged in. Redirecting...";
+                Navigation.NavigateTo("/");
+                return;
+            }
+            else
+            {
+                status = "User successfully loaded!";
+                var response = await Http.PostAsJsonAsync(
+                    "Authentication/GetUser",
+                    Auth.UserId
+                );
+
+                if (response.IsSuccessStatusCode)
+                {
+                    currentuser = await response.Content.ReadFromJsonAsync<AppUser>();
+                }
+                else
+                {
+                    currentuser = null;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            status = $"ERROR: {ex.Message}";
+            Console.WriteLine($"ACCOUNT ERROR: {ex}");
+        }
+
+        StateHasChanged();
+    }
+
+    private void OpenEditModal(string mode)
+    {
+        editMode = mode;
+        showEditModal = true;
+    }
+
+    private void CloseEditModal()
+    {
+        showEditModal = false;
+    }
+}

@@ -13,6 +13,7 @@ namespace Recommendations_engine
         } // Stuff like which database to provide, where the database is located, other database configurations.
           // Then the options are passed to the parent: DBContext
         public DbSet<game> Games => Set<game>(); // "A DbSet represents a collection of game records that EF Core can query and manipulate."
+        public DbSet<AppUser> AppUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) /*
                                                                                 protected means the method is available to this class and certain derived classes.

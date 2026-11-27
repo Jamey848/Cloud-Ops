@@ -1,0 +1,110 @@
+[
+    {
+        "genre_id": "Action",
+        "genre_name": "Action"
+    },
+    {
+        "genre_id": "Free To Play",
+        "genre_name": "Free To Play"
+    },
+    {
+        "genre_id": "Adventure",
+        "genre_name": "Adventure"
+    },
+    {
+        "genre_id": "Massively Multiplayer",
+        "genre_name": "Massively Multiplayer"
+    },
+    {
+        "genre_id": "Strategy",
+        "genre_name": "Strategy"
+    },
+    {
+        "genre_id": "Indie",
+        "genre_name": "Indie"
+    },
+    {
+        "genre_id": "RPG",
+        "genre_name": "RPG"
+    },
+    {
+        "genre_id": "Casual",
+        "genre_name": "Casual"
+    },
+    {
+        "genre_id": "Simulation",
+        "genre_name": "Simulation"
+    },
+    {
+        "genre_id": "Early Access",
+        "genre_name": "Early Access"
+    },
+    {
+        "genre_id": "Sports",
+        "genre_name": "Sports"
+    },
+    {
+        "genre_id": "Racing",
+        "genre_name": "Racing"
+    },
+    {
+        "genre_id": "Violent",
+        "genre_name": "Violent"
+    },
+    {
+        "genre_id": "Gore",
+        "genre_name": "Gore"
+    },
+    {
+        "genre_id": "Movie",
+        "genre_name": "Movie"
+    },
+    {
+        "genre_id": "Animation & Modeling",
+        "genre_name": "Animation & Modeling"
+    },
+    {
+        "genre_id": "Design & Illustration",
+        "genre_name": "Design & Illustration"
+    },
+    {
+        "genre_id": "Education",
+        "genre_name": "Education"
+    },
+    {
+        "genre_id": "Software Training",
+        "genre_name": "Software Training"
+    },
+    {
+        "genre_id": "Utilities",
+        "genre_name": "Utilities"
+    },
+    {
+        "genre_id": "Web Publishing",
+        "genre_name": "Web Publishing"
+    },
+    {
+        "genre_id": "Sexual Content",
+        "genre_name": "Sexual Content"
+    },
+    {
+        "genre_id": "Nudity",
+        "genre_name": "Nudity"
+    },
+    {
+        "genre_id": "Video Production",
+        "genre_name": "Video Production"
+    },
+    {
+        "genre_id": "Game Development",
+        "genre_name": "Game Development"
+    },
+    {
+        "genre_id": "Audio Production",
+        "genre_name": "Audio Production"
+    },
+    {
+        "genre_id": "Accounting",
+        "genre_name": "Accounting"
+    }
+]
